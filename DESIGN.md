@@ -13,3 +13,4 @@ De app bestaat vooral uit klikbare afbeeldingen. Een afbeelding wordt aan het co
 ### Data sets and sources
 De woorden die geoefend en getoets worden staan in woordenlijsten. De categorie die gekozen word, bepaalt welke woordenlijst en afbeelding worden geactiveerd.  
 
+![schets](https://github.com/RosannevanderPol/Project/blob/master/doc/schets.jpg?raw=true)
