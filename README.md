@@ -15,9 +15,10 @@ In zowel de 'oefen-' als de 'toets-modus' kan de gebruiker een categorie kiezen 
 * woonkamer
 * op straat
 
-![20160104_222515](https://github.com/RosannevanderPol/Project/blob/master/doc/20160104_222515.jpg?raw=true)
+![schets](https://github.com/RosannevanderPol/Project/blob/master/doc/schets.jpg?raw=true)
 
 De plaatjes zal ik zelf proberen samen te stellen uit afbeeldingen die ik van internet haal. 
+Ik speel nog met het idee of ik verschillende manieren van oefenen implementeer.
 
 Rosanne van der Pol - 10564268
 
