@@ -15,6 +15,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".oefcat">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".toetcat" />
+        <activity android:name=".oefcatOne" />
+        <activity android:name=".oefcatTwo" />
+        <activity android:name=".toetcatOne" />
+        <activity android:name=".toetcatTwo"></activity>
     </application>
 
 </manifest>
