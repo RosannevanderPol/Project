@@ -29,7 +29,7 @@ combineer select modus en cat tot de juiste play (bv. oefenen en kleding, of toe
 shared pref category  
 * showword  
 if 'broek' clicked, show in textview 'broek' 
-* text-to-speech
+* text-to-speech  
 als op het microfoontje geklikt word, spreek het woord uit de textview uit
   
 **toets**  
