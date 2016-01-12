@@ -24,6 +24,11 @@ public class Oefenen extends AppCompatActivity {
         DutchWord.setText("Rood");
     }
 
+    public void BlauwClick(View view)
+    {
+        DutchWord.setText("Blauw");
+    }
+
     // Method to enable rotation
     @Override
     public void onSaveInstanceState(Bundle outState)

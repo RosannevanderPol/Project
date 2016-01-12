@@ -36,4 +36,14 @@
         android:layout_centerHorizontal="true"
         android:background="#f40d0d"
         android:textSize="5sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button13"
+        android:onClick="BlauwClick"
+        android:background="#113ce7"
+        android:textSize="5sp"
+        android:layout_alignTop="@+id/button12"
+        android:layout_toRightOf="@+id/dutchword" />
 </RelativeLayout>
