@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="woord"
-        android:id="@+id/textView2"
+        android:id="@+id/dutchword"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
@@ -32,6 +32,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/button12"
         android:layout_below="@+id/imageButton"
+        android:onClick="RoodClick"
         android:layout_centerHorizontal="true"
         android:background="#f40d0d"
         android:textSize="5sp" />

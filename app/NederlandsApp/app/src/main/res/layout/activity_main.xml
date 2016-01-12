@@ -23,6 +23,7 @@
         android:textSize="25sp"
         android:text="oefenen"
         android:id="@+id/button"
+        android:onClick="OefenenClick"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
@@ -32,6 +33,7 @@
         android:textSize="25sp"
         android:text="toets"
         android:id="@+id/button2"
+        android:onClick="ToetsClick"
         android:layout_below="@+id/button"
         android:layout_centerHorizontal="true" />
 

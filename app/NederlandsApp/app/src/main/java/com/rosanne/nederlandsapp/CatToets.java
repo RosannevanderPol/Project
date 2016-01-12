@@ -5,24 +5,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class CatToets extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_cattoets);
     }
 
-    public void OefenenClick(View view)
+    public void KledingClick(View view)
     {
-        Intent Oefenen = new Intent(this, CatOef.class);
-        startActivity(Oefenen);
-    }
-
-    public void ToetsClick(View view)
-    {
-        Intent Toetsen = new Intent(this, CatToets.class);
-        startActivity(Toetsen);
+        Intent intent = new Intent(this, Toets.class);
+        startActivity(intent);
     }
 
     // Method to enable rotation

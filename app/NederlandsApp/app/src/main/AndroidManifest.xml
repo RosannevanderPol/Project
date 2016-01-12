@@ -15,9 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Categories" />
+        <activity android:name=".CatOef" />
         <activity android:name=".Oefenen" />
-        <activity android:name=".Toets"></activity>
+        <activity android:name=".Toets" />
+        <activity android:name=".CatToets"></activity>
     </application>
 
 </manifest>
