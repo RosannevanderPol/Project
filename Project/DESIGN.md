@@ -13,4 +13,38 @@ De app bestaat vooral uit klikbare afbeeldingen. Een afbeelding wordt aan het co
 ### Data sets and sources
 De woorden die geoefend en getoets worden staan in woordenlijsten. De categorie die gekozen word, bepaalt welke woordenlijst en afbeelding worden geactiveerd.  
 
+** mainactivity **  
+* selectmodus  
+onthoud voorkeur in sharedpreferences  
+  
+** category **  
+* selectcategory  
+onthoud voorkeur in sharedpreferences  
+* select play  
+combineer select modus en cat tot de juiste play (bv. oefenen en kleding, of toets en kleuren)  
+  
+** oefenen **  
+* selectafbeelding    
+shared pref category  
+* showword  
+if 'broek' clicked, show in textview 'broek'  
+* text-to-speech  
+als op het microfoontje geklikt word, spreek het woord uit de textview uit
+  
+** toets **  
+* selectafbeelding  
+shared pref category  
+* counter  
+houdt het aantal goede en foute antwoorden bij  
+* choosequestion  
+selecteer het object wat door de gebruiker aangewezen moet worden (random from a list?)  
+* clickedobject  
+onthoud waarom geklikt is  
+* correct  
+if choosequestion == clickedobject  
+  correct + teller  
+else  
+  wrong + teller  
+  
+
 ![schets](https://github.com/RosannevanderPol/Project/blob/master/doc/schets.jpg?raw=true)
