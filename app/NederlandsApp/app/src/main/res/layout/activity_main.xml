@@ -13,32 +13,37 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:weightSum="1">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Nederlands"
-            android:textStyle="bold"
-            android:id="@+id/textView7"
-            android:layout_gravity="center_horizontal"
-            android:textSize="60dp"
-            android:textColor="#3b42ca"
-            android:paddingTop="20dp"
-            android:paddingBottom="50dp"/>
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textView8"
+            android:textColor="#f0ae2b" />
 
         <ImageView
-            android:layout_width="168dp"
-            android:layout_height="161dp"
+            android:layout_width="289dp"
+            android:layout_height="276dp"
             android:id="@+id/imageView2"
-            android:background="@drawable/vlag"
+            android:background="@drawable/vlag2"
             android:layout_alignParentBottom="true"
             android:layout_below="@+id/button2"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:layout_gravity="center_horizontal"
-            android:paddingBottom="40dp"/>
+            android:paddingBottom="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView7"
+            android:background="#f0ae2b"
+            android:text="  "
+            android:textSize="35dp" />
 
         <Button
             android:layout_width="fill_parent"
