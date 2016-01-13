@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".CatOef" />
-        <activity android:name=".Oefenen" />
+        <activity android:name=".OefKleur" />
         <activity android:name=".Toets" />
         <activity android:name=".CatToets"></activity>
     </application>

@@ -15,7 +15,7 @@ public class CatOef extends AppCompatActivity {
 
     public void KledingClick(View view)
     {
-        Intent intent = new Intent(this, Oefenen.class);
+        Intent intent = new Intent(this, OefKleur.class);
         startActivity(intent);
     }
 
