@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.rosanne.nederlandsapp.Oefenen">
+    tools:context="com.rosanne.nederlandsapp.Oefenen"
+    android:background="#f0ae2b">
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,6 +39,7 @@
         android:textSize="5sp" />
 
     <Button
+        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button13"
@@ -46,4 +48,34 @@
         android:textSize="5sp"
         android:layout_alignTop="@+id/button12"
         android:layout_toRightOf="@+id/dutchword" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:background="@drawable/abc_ic_voice_search_api_mtrl_alpha"
+        android:onClick="SpeakClick"
+        android:layout_alignTop="@+id/dutchword"
+        android:layout_toRightOf="@+id/dutchword"
+        android:layout_toEndOf="@+id/dutchword" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton3"
+        android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+        android:onClick="TerugClick"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/dutchword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Klik op een onderdeel"
+        android:id="@+id/textView6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

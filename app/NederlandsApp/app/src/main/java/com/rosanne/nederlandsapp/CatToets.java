@@ -19,18 +19,16 @@ public class CatToets extends AppCompatActivity {
         startActivity(intent);
     }
 
-    // Method to enable rotation
+    /** Onthoudt de huidige staat, maakt roteren mogelijk **/
     @Override
     public void onSaveInstanceState(Bundle outState)
     {
         super.onSaveInstanceState(outState);
     }
 
-    // Method to enable rotation
     @Override
     public void onRestoreInstanceState(Bundle inState)
     {
         super.onRestoreInstanceState(inState);
     }
-
 }
