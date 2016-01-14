@@ -79,7 +79,7 @@ public class OefKleur extends AppCompatActivity {
     /** Terugknop **/
     public void TerugClick(View view)
     {
-        Intent Main = new Intent(this, MainActivity.class);
+        Intent Main = new Intent(this, CatOef.class);
         startActivity(Main);
     }
 

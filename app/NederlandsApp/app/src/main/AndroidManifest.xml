@@ -17,7 +17,7 @@
         </activity>
         <activity android:name=".CatOef" />
         <activity android:name=".OefKleur" />
-        <activity android:name=".Toets" />
+        <activity android:name=".ToetsKleur" />
         <activity android:name=".CatToets"></activity>
     </application>
 

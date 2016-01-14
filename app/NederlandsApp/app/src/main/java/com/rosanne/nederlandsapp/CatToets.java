@@ -13,10 +13,18 @@ public class CatToets extends AppCompatActivity {
         setContentView(R.layout.activity_cattoets);
     }
 
+    /** Kies categorie **/
     public void KledingClick(View view)
     {
-        Intent intent = new Intent(this, Toets.class);
+        Intent intent = new Intent(this, ToetsKleur.class);
         startActivity(intent);
+    }
+
+    /** Terugknop **/
+    public void TerugClick(View view)
+    {
+        Intent Main = new Intent(this, MainActivity.class);
+        startActivity(Main);
     }
 
     /** Onthoudt de huidige staat, maakt roteren mogelijk **/

@@ -13,10 +13,18 @@ public class CatOef extends AppCompatActivity {
         setContentView(R.layout.activity_catoef);
     }
 
+    /** Kies categorie **/
     public void KledingClick(View view)
     {
         Intent intent = new Intent(this, OefKleur.class);
         startActivity(intent);
+    }
+
+    /** Terugknop **/
+    public void TerugClick(View view)
+    {
+        Intent Main = new Intent(this, MainActivity.class);
+        startActivity(Main);
     }
 
     /** Onthoudt de huidige staat, maakt roteren mogelijk **/
