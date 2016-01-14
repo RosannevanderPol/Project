@@ -41,3 +41,7 @@ ziek
 
 # Day 8
 * In de oefen- en toetsmodus tekst-to-speech geïmplementeerd. Als je nu op het microfoontje klikt, wordt het woord in de textview opgelezen. Helaas is er geen Nederlands beschikbaar. Ik heb gekozen voor Duits omdat da qua klank nog het meest in de buurt van Nederlands zit. 
+
+# Day 9
+* De toetsmodus geïmplementeerd. Dat wil zeggen de app vraagt in deze modus nu om een kleur die je aan moet klikken, hij geeft feedback of de juiste kleur is aangeklikt: zo niet, moet je net zo lang proberen tot je wel de juiste hebt aangeklikt, zo ja, gaat hij meteen naar het volgende random gekozen woord uit de lijst. Als de lijst 8 woorden lang is, worden 2*8 vragen gestelt, daarna gaat de app automatisch terug naar het beginscherm. Ook heb ik een teller geimplementeerd die het aantal vragen bijhoudt. Als de app vraagt om een kleur, kun je ook op het microfoontje klikken voor het uitspreken van dit woord. 
+* Zowel de oefen- als de toetsmodus zijn nu werkend voor de categorie 'kleur'.
