@@ -7,11 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import java.util.Locale;
 
-public class ToetsKleur extends AppCompatActivity {
+public class ToetsStraat extends AppCompatActivity {
 
-    public final String[] list = {"Wit", "Zwart", "Rood","Blauw","Groen","Paars","Geel","Oranje"};
+    public final String[] list = {"de stoep", "de voetganger", "de lantaarnpaal","de fietser","de boom","het stoplicht","de weg","de auto"};
     public String woord;
     public TextView Dutchword;
     public TextView Nedwoord;
@@ -23,7 +24,7 @@ public class ToetsKleur extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_toetskleur);
+        setContentView(R.layout.activity_toetsstraat);
 
         Dutchword = (TextView) findViewById(R.id.Dutchword);
         Nedwoord = (TextView) findViewById(R.id.Nedwoord);
@@ -65,51 +66,51 @@ public class ToetsKleur extends AppCompatActivity {
     }
 
     /** Alle aan te wijzen onderdelen **/
-    public void WitClick(View view)
+    public void AutoClick(View view)
     {
-        Nedwoord.setText("Wit");
+        Nedwoord.setText("de auto");
         Feedback();
     }
 
-    public void RoodClick(View view)
+    public void WegClick(View view)
     {
-        Nedwoord.setText("Rood");
+        Nedwoord.setText("de weg");
         Feedback();
     }
 
-    public void OranjeClick(View view)
+    public void StoepClick(View view)
     {
-        Nedwoord.setText("Oranje");
+        Nedwoord.setText("de stoep");
         Feedback();
     }
 
-    public void GeelClick(View view)
+    public void VoetgangerClick(View view)
     {
-        Nedwoord.setText("Geel");
+        Nedwoord.setText("de voetganger");
         Feedback();
     }
 
-    public void GroenClick(View view)
+    public void LantaarnClick(View view)
     {
-        Nedwoord.setText("Groen");
+        Nedwoord.setText("de lantaarnpaal");
         Feedback();
     }
 
-    public void BlauwClick(View view)
+    public void FietserClick(View view)
     {
-        Nedwoord.setText("Blauw");
+        Nedwoord.setText("de fietser");
         Feedback();
     }
 
-    public void PaarsClick(View view)
+    public void BoomClick(View view)
     {
-        Nedwoord.setText("Paars");
+        Nedwoord.setText("de boom");
         Feedback();
     }
 
-    public void ZwartClick(View view)
+    public void StoplichtClick(View view)
     {
-        Nedwoord.setText("Zwart");
+        Nedwoord.setText("het stoplicht");
         Feedback();
     }
 

@@ -20,6 +20,13 @@ public class CatOef extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /** Kies categorie **/
+    public void StraatClick(View view)
+    {
+        Intent intent = new Intent(this, oefstraat.class);
+        startActivity(intent);
+    }
+
     /** Terugknop **/
     public void TerugClick(View view)
     {

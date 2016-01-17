@@ -15,12 +15,12 @@
         android:layout_height="match_parent" >
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="364dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="0.25"
             android:baselineAligned="false">
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Klik op een onderdeel"
@@ -29,80 +29,79 @@
                 android:padding="5dp"
                 android:textAlignment="center"
                 android:textColor="#3b42ca"
-                android:textSize="25sp"
-                android:layout_weight="0.25" />
+                android:textSize="20dp"
+                android:gravity="center" />
         </LinearLayout>
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_height="324dp">
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/buttonWit"
+                android:layout_height="40dp"
+                android:id="@+id/buttonAuto"
                 android:layout_centerHorizontal="true"
                 android:background="#ffffff"
                 android:onClick="WitClick" />
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/buttonRood"
+                android:layout_height="40dp"
+                android:id="@+id/buttonWeg"
                 android:background="#f40d0d"
                 android:layout_centerHorizontal="true"
                 android:onClick="RoodClick"
-                android:layout_below="@+id/buttonWit" />
+                android:layout_below="@+id/buttonAuto" />
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/buttonOranje"
-                android:layout_below="@+id/buttonRood"
+                android:layout_height="40dp"
+                android:id="@+id/buttonStoep"
+                android:layout_below="@+id/buttonWeg"
                 android:layout_centerHorizontal="true"
                 android:background="#fe7b2a"
                 android:onClick="OranjeClick" />
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/buttonGeel"
-                android:layout_below="@+id/buttonOranje"
+                android:layout_height="40dp"
+                android:id="@+id/buttonVoetg"
+                android:layout_below="@+id/buttonStoep"
                 android:layout_centerHorizontal="true"
                 android:background="#f2d606"
                 android:onClick="GeelClick" />
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/buttonGroen"
-                android:layout_below="@+id/buttonGeel"
+                android:layout_height="40dp"
+                android:id="@+id/buttonLantaarn"
+                android:layout_below="@+id/buttonVoetg"
                 android:layout_centerHorizontal="true"
                 android:background="#52b20d"
                 android:onClick="GroenClick" />
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/buttonBlauw"
+                android:layout_height="40dp"
+                android:id="@+id/buttonFietser"
                 android:onClick="BlauwClick"
                 android:background="#113ce7"
-                android:layout_below="@+id/buttonGroen" />
+                android:layout_below="@+id/buttonLantaarn" />
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/buttonPaars"
-                android:layout_below="@+id/buttonBlauw"
+                android:layout_height="40dp"
+                android:id="@+id/buttonBoom"
+                android:layout_below="@+id/buttonFietser"
                 android:layout_centerHorizontal="true"
                 android:background="#9042ef"
                 android:onClick="PaarsClick" />
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/buttonZwart"
-                android:layout_below="@+id/buttonPaars"
+                android:layout_height="40dp"
+                android:id="@+id/buttonStoplicht"
+                android:layout_below="@+id/buttonBoom"
                 android:layout_centerHorizontal="true"
                 android:background="#000000"
                 android:onClick="ZwartClick" />
@@ -124,7 +123,7 @@
                     android:onClick="TerugClick"
                     android:padding="15dp" />
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textStyle="bold"
@@ -132,8 +131,9 @@
                     android:padding="5dp"
                     android:layout_weight="0.06"
                     android:textAlignment="center"
-                    android:textSize="30sp"
-                    android:textColor="#3b42ca" />
+                    android:textSize="20dp"
+                    android:textColor="#3b42ca"
+                    android:gravity="center" />
                 <ImageButton
                     android:layout_width="50dp"
                     android:layout_height="50dp"

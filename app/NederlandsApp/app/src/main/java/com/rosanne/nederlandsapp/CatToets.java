@@ -20,6 +20,13 @@ public class CatToets extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /** Kies categorie **/
+    public void StraatClick(View view)
+    {
+        Intent intent = new Intent(this, ToetsStraat.class);
+        startActivity(intent);
+    }
+
     /** Terugknop **/
     public void TerugClick(View view)
     {
