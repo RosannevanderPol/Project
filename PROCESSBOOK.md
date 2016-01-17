@@ -45,3 +45,10 @@ ziek
 # Day 9
 * De toetsmodus geïmplementeerd. Dat wil zeggen de app vraagt in deze modus nu om een kleur die je aan moet klikken, hij geeft feedback of de juiste kleur is aangeklikt: zo niet, moet je net zo lang proberen tot je wel de juiste hebt aangeklikt, zo ja, gaat hij meteen naar het volgende random gekozen woord uit de lijst. Als de lijst 8 woorden lang is, worden 2*8 vragen gestelt, daarna gaat de app automatisch terug naar het beginscherm. Ook heb ik een teller geimplementeerd die het aantal vragen bijhoudt. Als de app vraagt om een kleur, kun je ook op het microfoontje klikken voor het uitspreken van dit woord. 
 * Zowel de oefen- als de toetsmodus zijn nu werkend voor de categorie 'kleur'.
+
+# Day 10
+* Presentatie van de app. 
+
+# Weekend
+* De categorie 'op straat' toegevoegd aan zowel de oefen- als de toetsmodus.
+* Layout verbeterd.
