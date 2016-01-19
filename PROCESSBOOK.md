@@ -52,3 +52,10 @@ ziek
 # Weekend
 * De categorie 'op straat' toegevoegd aan zowel de oefen- als de toetsmodus.
 * Layout verbeterd.
+
+# Day 11
+
+# Day 12
+* De categorie 'kleding' toegevoegd aan zowel de oefen- als de toetsmodus.
+* Een teller en dialog melding geïmplementeerd in de toetsmodus met hoeveel vragen er fout zijn beantwoord. De nieuwe activity wordt pas gestart na een klik op OK. (voor nu alleen in de kleuren-toets, morgen verder met straat en kleding)
+
