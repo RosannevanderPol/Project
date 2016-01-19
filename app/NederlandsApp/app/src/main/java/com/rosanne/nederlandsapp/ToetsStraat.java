@@ -60,7 +60,7 @@ public class ToetsStraat extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),
                     "Je bent klaar!",
                     Toast.LENGTH_LONG).show();
-            Intent Main = new Intent(this, MainActivity.class);
+            Intent Main = new Intent(this, CatToets.class);
             startActivity(Main);
         }
     }

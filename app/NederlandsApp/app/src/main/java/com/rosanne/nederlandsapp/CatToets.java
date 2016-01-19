@@ -14,7 +14,7 @@ public class CatToets extends AppCompatActivity {
     }
 
     /** Kies categorie **/
-    public void KledingClick(View view)
+    public void KleurClick(View view)
     {
         Intent intent = new Intent(this, ToetsKleur.class);
         startActivity(intent);
@@ -24,6 +24,13 @@ public class CatToets extends AppCompatActivity {
     public void StraatClick(View view)
     {
         Intent intent = new Intent(this, ToetsStraat.class);
+        startActivity(intent);
+    }
+
+    /** Kies categorie **/
+    public void KledingClick(View view)
+    {
+        Intent intent = new Intent(this, ToetsKleding.class);
         startActivity(intent);
     }
 

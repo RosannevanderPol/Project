@@ -1,9 +1,5 @@
 package com.rosanne.nederlandsapp;
 
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.app.DialogFragment;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
@@ -11,11 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import java.util.Locale;
 
-public class ToetsKleur extends AppCompatActivity {
+public class ToetsKleding extends AppCompatActivity {
 
-    public final String[] list = {"Wit", "Zwart", "Rood","Blauw","Groen","Paars","Geel","Oranje"};
+    public final String[] list = {"de schoen", "de jurk", "de broek","het kind","het overhemd","de baby","de man","de vrouw"};
     public String woord;
     public TextView Dutchword;
     public TextView Nedwoord;
@@ -23,12 +20,11 @@ public class ToetsKleur extends AppCompatActivity {
     public TextToSpeech translator;
     public int teller = 1;
     public TextView Teller;
-    public int tellerfout = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_toetskleur);
+        setContentView(R.layout.activity_toetskleding);
 
         Dutchword = (TextView) findViewById(R.id.Dutchword);
         Nedwoord = (TextView) findViewById(R.id.Nedwoord);
@@ -49,84 +45,72 @@ public class ToetsKleur extends AppCompatActivity {
     /** Check of het antwoord goed is en geef feedback **/
     private void Feedback(){
         if (String.valueOf(Dutchword.getText()) == String.valueOf(Nedwoord.getText())){
-            Feedback.setText("   :)    GOED");
+            Feedback.setText("   :)    goed zo!");
             teller += 1;
             Checkteller();
             SelecteerWoord();
         }
         else {
             Feedback.setText("   :(    probeer nog eens");
-            tellerfout +=1;
         }
     }
 
-    private void Checkteller() {
-        if (teller > (list.length * 2)) {
-            AlertDialog.Builder scores = new AlertDialog.Builder(this);   // stackoverflow.com
-            scores.setMessage("Aantal fout: " + tellerfout);
-            scores.setTitle("Scores");
-            scores.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int which) {
-                    startMain();
-                }
-            });
-            scores.setCancelable(true);
-            scores.create().show();
+    private void Checkteller(){
+        if (teller > (list.length * 2)){
+            Toast.makeText(getApplicationContext(),
+                    "Je bent klaar!",
+                    Toast.LENGTH_LONG).show();
+            Intent Main = new Intent(this, CatToets.class);
+            startActivity(Main);
         }
-    }
-
-    private void startMain() {
-        Intent main = new Intent(this, CatToets.class);
-        main.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(main);
     }
 
     /** Alle aan te wijzen onderdelen **/
-    public void WitClick(View view)
+    public void SchoenClick(View view)
     {
-        Nedwoord.setText("Wit");
+        Nedwoord.setText("de schoen");
         Feedback();
     }
 
-    public void RoodClick(View view)
+    public void JurkClick(View view)
     {
-        Nedwoord.setText("Rood");
+        Nedwoord.setText("de jurk");
         Feedback();
     }
 
-    public void OranjeClick(View view)
+    public void BroekClick(View view)
     {
-        Nedwoord.setText("Oranje");
+        Nedwoord.setText("de broek");
         Feedback();
     }
 
-    public void GeelClick(View view)
+    public void KindClick(View view)
     {
-        Nedwoord.setText("Geel");
+        Nedwoord.setText("het kind");
         Feedback();
     }
 
-    public void GroenClick(View view)
+    public void OverhemdClick(View view)
     {
-        Nedwoord.setText("Groen");
+        Nedwoord.setText("het overhemd");
         Feedback();
     }
 
-    public void BlauwClick(View view)
+    public void BabyClick(View view)
     {
-        Nedwoord.setText("Blauw");
+        Nedwoord.setText("de baby");
         Feedback();
     }
 
-    public void PaarsClick(View view)
+    public void ManClick(View view)
     {
-        Nedwoord.setText("Paars");
+        Nedwoord.setText("de man");
         Feedback();
     }
 
-    public void ZwartClick(View view)
+    public void VrouwClick(View view)
     {
-        Nedwoord.setText("Zwart");
+        Nedwoord.setText("de vrouw");
         Feedback();
     }
 

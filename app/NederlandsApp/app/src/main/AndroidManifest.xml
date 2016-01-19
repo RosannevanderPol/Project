@@ -20,7 +20,9 @@
         <activity android:name=".ToetsKleur" />
         <activity android:name=".CatToets" />
         <activity android:name=".oefstraat" />
-        <activity android:name=".ToetsStraat"></activity>
+        <activity android:name=".ToetsStraat" />
+        <activity android:name=".OefKleding" />
+        <activity android:name=".ToetsKleding"></activity>
     </application>
 
 </manifest>

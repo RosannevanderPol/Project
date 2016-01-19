@@ -14,7 +14,7 @@ public class CatOef extends AppCompatActivity {
     }
 
     /** Kies categorie **/
-    public void KledingClick(View view)
+    public void KleurClick(View view)
     {
         Intent intent = new Intent(this, OefKleur.class);
         startActivity(intent);
@@ -24,6 +24,13 @@ public class CatOef extends AppCompatActivity {
     public void StraatClick(View view)
     {
         Intent intent = new Intent(this, oefstraat.class);
+        startActivity(intent);
+    }
+
+    /** Kies categorie **/
+    public void KledingClick(View view)
+    {
+        Intent intent = new Intent(this, OefKleding.class);
         startActivity(intent);
     }
 

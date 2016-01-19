@@ -36,7 +36,7 @@
             <Button
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:onClick="KledingClick"
+                android:onClick="KleurClick"
                 android:id="@+id/button3"
                 android:layout_column="0"
                 android:background="@drawable/butkleur"
@@ -63,7 +63,9 @@
                 android:layout_column="3"
                 android:layout_alignBottom="@+id/button3"
                 android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/butkleding1"
+                android:onClick="KledingClick"/>
 
             <Button
                 android:layout_width="wrap_content"
