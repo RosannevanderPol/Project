@@ -16,7 +16,7 @@
         android:id="@+id/linearLayout2">
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="364dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="0.25"
             android:baselineAligned="false">
@@ -49,6 +49,12 @@
                 android:layout_weight="0.07"
                 android:textSize="20dp"
                 android:paddingBottom="15dp"/>
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/imageButton3"
+                android:background="@drawable/abc_ic_voice_search_api_mtrl_alpha"
+                android:onClick="SpeakClick" />
         </LinearLayout>
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -58,7 +64,7 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="fill_parent"
                     android:layout_height="40dp"
-                    android:id="@+id/button12"
+                    android:id="@+id/buttonWit"
                     android:layout_centerHorizontal="true"
                     android:background="#ffffff"
                     android:onClick="WitClick" />
@@ -66,17 +72,17 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="fill_parent"
                     android:layout_height="40dp"
-                    android:id="@+id/button13"
+                    android:id="@+id/buttonRood"
                     android:background="#f40d0d"
                     android:layout_centerHorizontal="true"
                     android:onClick="RoodClick"
-                    android:layout_below="@+id/button12" />
+                    android:layout_below="@+id/buttonWit" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="fill_parent"
                     android:layout_height="40dp"
-                    android:id="@+id/button16"
-                    android:layout_below="@+id/button13"
+                    android:id="@+id/buttonOranje"
+                    android:layout_below="@+id/buttonRood"
                     android:layout_centerHorizontal="true"
                     android:background="#fe7b2a"
                     android:onClick="OranjeClick" />
@@ -84,8 +90,8 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="fill_parent"
                     android:layout_height="40dp"
-                    android:id="@+id/button17"
-                    android:layout_below="@+id/button16"
+                    android:id="@+id/buttonGeel"
+                    android:layout_below="@+id/buttonOranje"
                     android:background="#f2d606"
                     android:onClick="GeelClick"
                     android:layout_alignParentRight="true"
@@ -94,8 +100,8 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="fill_parent"
                     android:layout_height="40dp"
-                    android:id="@+id/button18"
-                    android:layout_below="@+id/button17"
+                    android:id="@+id/buttonGroen"
+                    android:layout_below="@+id/buttonGeel"
                     android:layout_centerHorizontal="true"
                     android:background="#52b20d"
                     android:onClick="GroenClick" />
@@ -103,16 +109,16 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="fill_parent"
                     android:layout_height="40dp"
-                    android:id="@+id/button19"
+                    android:id="@+id/buttonBlauw"
                     android:onClick="BlauwClick"
                     android:background="#113ce7"
-                    android:layout_below="@+id/button18" />
+                    android:layout_below="@+id/buttonGroen" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="fill_parent"
                     android:layout_height="40dp"
-                    android:id="@+id/button20"
-                    android:layout_below="@+id/button19"
+                    android:id="@+id/buttonPaars"
+                    android:layout_below="@+id/buttonBlauw"
                     android:layout_centerHorizontal="true"
                     android:background="#9042ef"
                     android:onClick="PaarsClick" />
@@ -120,36 +126,53 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="fill_parent"
                     android:layout_height="40dp"
-                    android:id="@+id/button21"
-                    android:layout_below="@+id/button20"
+                    android:id="@+id/buttonZwart"
+                    android:layout_below="@+id/buttonPaars"
                     android:layout_centerHorizontal="true"
                     android:background="#000000"
                     android:onClick="ZwartClick" />
         </RelativeLayout>
+
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="0.25">
+            android:weightSum="0.25"
+            android:padding="2dp" >
+
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
                 <ImageButton
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:id="@+id/imageButton2"
+                    android:id="@+id/imageButton4"
                     android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha"
                     android:onClick="TerugClick" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:id="@+id/imageView4" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/smiley" />
+
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:id="@+id/feedback"
                     android:textColor="#3b42ca"
+                    android:layout_weight="0.01"
                     android:textSize="20dp"
                     android:textAlignment="center"
                     android:paddingTop="15dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -161,14 +184,4 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-
-    <ImageButton
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:id="@+id/imageButton3"
-        android:background="@drawable/abc_ic_voice_search_api_mtrl_alpha"
-        android:onClick="SpeakClick"
-        android:layout_alignTop="@+id/linearLayout2"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
 </RelativeLayout>

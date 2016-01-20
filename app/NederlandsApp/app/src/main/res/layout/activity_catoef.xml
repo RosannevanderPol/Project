@@ -64,7 +64,7 @@
                 android:layout_alignBottom="@+id/button3"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                android:background="@drawable/butkleding1"
+                android:background="@drawable/butkleding"
                 android:onClick="KledingClick"/>
 
             <Button

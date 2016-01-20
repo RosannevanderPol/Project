@@ -1,10 +1,13 @@
 package com.rosanne.nederlandsapp;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,6 +23,8 @@ public class ToetsKleding extends AppCompatActivity {
     public TextToSpeech translator;
     public int teller = 1;
     public TextView Teller;
+    public int tellerfout = 0;
+    public ImageView smiley;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +35,7 @@ public class ToetsKleding extends AppCompatActivity {
         Nedwoord = (TextView) findViewById(R.id.Nedwoord);
         Feedback = (TextView) findViewById(R.id.feedback);
         Teller = (TextView) findViewById(R.id.Teller);
+        smiley = (ImageView) findViewById(R.id.smiley);
 
         SelecteerWoord();
         Checkteller();
@@ -45,24 +51,38 @@ public class ToetsKleding extends AppCompatActivity {
     /** Check of het antwoord goed is en geef feedback **/
     private void Feedback(){
         if (String.valueOf(Dutchword.getText()) == String.valueOf(Nedwoord.getText())){
-            Feedback.setText("   :)    goed zo!");
+            Feedback.setText("  GOED!");
+            smiley.setImageResource(R.drawable.like);       // pixabay.com
             teller += 1;
             Checkteller();
             SelecteerWoord();
         }
         else {
-            Feedback.setText("   :(    probeer nog eens");
+            Feedback.setText("probeer nog eens");
+            smiley.setImageResource(R.drawable.dislike);    // pixabay.com
+            tellerfout +=1;
         }
     }
 
-    private void Checkteller(){
-        if (teller > (list.length * 2)){
-            Toast.makeText(getApplicationContext(),
-                    "Je bent klaar!",
-                    Toast.LENGTH_LONG).show();
-            Intent Main = new Intent(this, CatToets.class);
-            startActivity(Main);
+    /** Als er 16 vragen zijn gesteld, dialogvenster met aantalfout en daarna naar categorie overzicht**/
+    private void Checkteller() {
+        if (teller > (list.length * 2)) {
+            AlertDialog.Builder scores = new AlertDialog.Builder(this);   // stackoverflow.com
+            scores.setMessage("Aantal fout: " + tellerfout);
+            scores.setTitle("Score");
+            scores.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int which) {
+                    startMain();
+                }
+            });
+            scores.setCancelable(true);
+            scores.create().show();
         }
+    }
+    private void startMain() {
+        Intent main = new Intent(this, CatToets.class);
+        main.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(main);
     }
 
     /** Alle aan te wijzen onderdelen **/
@@ -71,50 +91,43 @@ public class ToetsKleding extends AppCompatActivity {
         Nedwoord.setText("de schoen");
         Feedback();
     }
-
     public void JurkClick(View view)
     {
         Nedwoord.setText("de jurk");
         Feedback();
     }
-
     public void BroekClick(View view)
     {
         Nedwoord.setText("de broek");
         Feedback();
     }
-
     public void KindClick(View view)
     {
         Nedwoord.setText("het kind");
         Feedback();
     }
-
     public void OverhemdClick(View view)
     {
         Nedwoord.setText("het overhemd");
         Feedback();
     }
-
     public void BabyClick(View view)
     {
         Nedwoord.setText("de baby");
         Feedback();
     }
-
     public void ManClick(View view)
     {
         Nedwoord.setText("de man");
         Feedback();
     }
-
     public void VrouwClick(View view)
     {
         Nedwoord.setText("de vrouw");
         Feedback();
     }
 
-    /** Het woord uit de textview uitspreken **/ // android-developers.blogspot.com
+    /** Het woord uit de textview uitspreken **/        // android-developers.blogspot.com
     public void SpeakClick(View view)
     {
         translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()

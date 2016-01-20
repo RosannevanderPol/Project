@@ -53,8 +53,8 @@
                 android:singleLine="false" />
         </LinearLayout>
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="324dp">
+            android:layout_width="300dp"
+            android:layout_height="380dp">
             <ImageView
                 android:layout_width="230dp"
                 android:layout_height="500dp"
@@ -79,31 +79,31 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonSchoen"
+                    android:id="@+id/buttonStoep"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="SchoenClick"
                     android:layout_alignParentBottom="true"
-                    android:layout_alignLeft="@+id/buttonBroek"
-                    android:layout_alignStart="@+id/buttonBroek" />
+                    android:layout_alignLeft="@+id/buttonLantaarnpaal"
+                    android:layout_alignStart="@+id/buttonLantaarnpaal" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonJurk"
+                    android:id="@+id/buttonVoetganger"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="JurkClick"
-                    android:layout_alignBaseline="@+id/buttonBroek"
-                    android:layout_alignBottom="@+id/buttonBroek"
-                    android:layout_toRightOf="@+id/buttonKind"
-                    android:layout_toEndOf="@+id/buttonKind" />
+                    android:layout_alignBaseline="@+id/buttonLantaarnpaal"
+                    android:layout_alignBottom="@+id/buttonLantaarnpaal"
+                    android:layout_toRightOf="@+id/buttonFietser"
+                    android:layout_toEndOf="@+id/buttonFietser" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonBroek"
+                    android:id="@+id/buttonLantaarnpaal"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="BroekClick"
-                    android:layout_above="@+id/buttonKind"
+                    android:layout_above="@+id/buttonFietser"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_marginLeft="26dp"
@@ -112,33 +112,33 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonKind"
+                    android:id="@+id/buttonFietser"
                     android:onClick="KindClick"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:layout_above="@+id/buttonSchoen"
+                    android:layout_above="@+id/buttonStoep"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="27dp" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonOverhemd"
+                    android:id="@+id/buttonStoplicht"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="OverhemdClick"
-                    android:layout_above="@+id/buttonJurk"
-                    android:layout_toRightOf="@+id/buttonBaby"
-                    android:layout_toEndOf="@+id/buttonBaby"
+                    android:layout_above="@+id/buttonVoetganger"
+                    android:layout_toRightOf="@+id/buttonBoom"
+                    android:layout_toEndOf="@+id/buttonBoom"
                     android:layout_marginBottom="26dp" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonBaby"
+                    android:id="@+id/buttonBoom"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="BabyClick"
-                    android:layout_above="@+id/buttonOverhemd"
-                    android:layout_alignLeft="@+id/buttonBroek"
-                    android:layout_alignStart="@+id/buttonBroek" />
+                    android:layout_above="@+id/buttonStoplicht"
+                    android:layout_alignLeft="@+id/buttonLantaarnpaal"
+                    android:layout_alignStart="@+id/buttonLantaarnpaal" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -146,10 +146,10 @@
                     android:id="@+id/buttonMan"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="ManClick"
-                    android:layout_alignBaseline="@+id/buttonBaby"
-                    android:layout_alignBottom="@+id/buttonBaby"
-                    android:layout_toRightOf="@+id/buttonBaby"
-                    android:layout_toEndOf="@+id/buttonBaby" />
+                    android:layout_alignBaseline="@+id/buttonBoom"
+                    android:layout_alignBottom="@+id/buttonBoom"
+                    android:layout_toRightOf="@+id/buttonBoom"
+                    android:layout_toEndOf="@+id/buttonBoom" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -158,25 +158,37 @@
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="VrouwClick"
                     android:layout_below="@+id/buttonMan"
-                    android:layout_toRightOf="@+id/buttonOverhemd"
-                    android:layout_toEndOf="@+id/buttonOverhemd" />
+                    android:layout_toRightOf="@+id/buttonStoplicht"
+                    android:layout_toEndOf="@+id/buttonStoplicht" />
             </RelativeLayout>
         </RelativeLayout>
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="0.25">
+            android:weightSum="0.25"
+            android:padding="2dp">
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
                 <ImageButton
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:id="@+id/imageButton2"
                     android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha"
                     android:onClick="TerugClick" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:id="@+id/imageView3" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/smiley" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
