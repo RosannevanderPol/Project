@@ -59,3 +59,11 @@ ziek
 * De categorie 'kleding' toegevoegd aan zowel de oefen- als de toetsmodus.
 * Een teller en dialog melding geïmplementeerd in de toetsmodus met hoeveel vragen er fout zijn beantwoord. De nieuwe activity wordt pas gestart na een klik op OK. (voor nu alleen in de kleuren-toets, morgen verder met straat en kleding)
 
+# Day 13
+* De categorieën 'op straat' en 'kleding' toegevoegd.
+* Bugfix voor feedback smiley.
+* Geknutselt voor alle albeeldingen.
+
+# Day 14
+* Doorgestampt en alle andere categorieën (cijfers, dieren, huiskamer, keuken, lichaam en gereedschap) geïmplemnteerd in de oefen- én toetsmodus en de afbeeling van 'kleuren' aangespast om in alle categoriën dezelfde stijl te hanteren, de app is volledig speelbaar.
+
