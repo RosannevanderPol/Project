@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".OefKleding"
+    tools:context=".OefHuiskamer"
     android:background="#f2bfa2">
     <LinearLayout
         android:orientation="vertical"
@@ -32,7 +32,7 @@
                 android:layout_width="280dp"
                 android:layout_height="500dp"
                 android:id="@+id/imageView"
-                android:background="@drawable/kleding2"
+                android:background="@drawable/huiskamer"
                 android:layout_alignParentLeft="false"
                 android:layout_alignParentStart="false"
                 android:layout_alignParentTop="true"
@@ -53,87 +53,86 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonTrui"
+                    android:id="@+id/buttonKast"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="TruiClick"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="39dp" />
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/buttonBroek"
-                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="BroekClick"
-                    android:layout_alignTop="@+id/buttonHandschoen"
-                    android:layout_alignLeft="@+id/buttonMuts"
-                    android:layout_alignStart="@+id/buttonMuts" />
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/buttonSjaal"
-                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="SjaalClick"
-                    android:layout_marginTop="43dp"
-                    android:layout_below="@+id/buttonMuts"
-                    android:layout_alignLeft="@+id/buttonBroek"
-                    android:layout_alignStart="@+id/buttonBroek" />
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/buttonLaars"
-                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="LaarsClick"
-                    android:layout_alignTop="@+id/buttonHandschoen"
-                    android:layout_alignLeft="@+id/buttonJas"
-                    android:layout_alignStart="@+id/buttonJas" />
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/buttonSchoen"
-                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="SchoenClick"
-                    android:layout_alignTop="@+id/buttonHandschoen"
-                    android:layout_toRightOf="@+id/buttonHandschoen"
-                    android:layout_toEndOf="@+id/buttonHandschoen"
-                    android:layout_marginTop="62dp" />
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/buttonMuts"
-                    android:onClick="MutsClick"
-                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:layout_marginLeft="39dp"
-                    android:layout_marginStart="39dp"
-                    android:layout_above="@+id/buttonHandschoen"
+                    android:onClick="KastClick"
+                    android:layout_alignTop="@+id/buttonBloemenvaas"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginStart="33dp" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonJas"
+                    android:id="@+id/buttonBloemenvaas"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="JasClick"
-                    android:layout_alignBottom="@+id/buttonSjaal"
-                    android:layout_toRightOf="@+id/buttonTrui"
-                    android:layout_toEndOf="@+id/buttonTrui" />
+                    android:onClick="BloemenvaasClick"
+                    android:layout_above="@+id/buttonLamp"
+                    android:layout_alignLeft="@+id/buttoTafel"
+                    android:layout_alignStart="@+id/buttoTafel" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonHandschoen"
+                    android:id="@+id/buttonKlok"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="HandschoenClick"
-                    android:layout_below="@+id/buttonTrui"
-                    android:layout_toRightOf="@+id/buttonBroek"
-                    android:layout_toEndOf="@+id/buttonBroek"
-                    android:layout_marginTop="128dp" />
+                    android:onClick="KlokClick"
+                    android:layout_marginTop="41dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/buttonLamp"
+                    android:layout_toStartOf="@+id/buttonLamp" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonKaars"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="KaarsClick"
+                    android:layout_above="@+id/buttoTafel"
+                    android:layout_toRightOf="@+id/buttoTafel"
+                    android:layout_toEndOf="@+id/buttoTafel" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonStoel"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="StoelClick"
+                    android:layout_above="@+id/buttonBank"
+                    android:layout_toLeftOf="@+id/buttonLamp"
+                    android:layout_toStartOf="@+id/buttonLamp" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonLamp"
+                    android:onClick="LampClick"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttoTafel"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="TafelClick"
+                    android:layout_above="@+id/buttonBank"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="22dp" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonBank"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="BankClick"
+                    android:layout_marginBottom="39dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignLeft="@+id/buttonKast"
+                    android:layout_alignStart="@+id/buttonKast" />
             </RelativeLayout>
         </RelativeLayout>
         <LinearLayout

@@ -1,14 +1,15 @@
 package com.rosanne.nederlandsapp;
 
 import android.content.Intent;
+import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import android.speech.tts.TextToSpeech;
+
 import java.util.Locale;
 
-public class OefKleur extends AppCompatActivity {
+public class OefDieren extends AppCompatActivity {
 
     public TextView DutchWord;
     public TextToSpeech translator;
@@ -16,58 +17,51 @@ public class OefKleur extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_oefkleur);
+        setContentView(R.layout.activity_oefdieren);
 
         DutchWord = (TextView) findViewById(R.id.dutchword);
     }
 
     /** Alle aan te wijzen onderdelen **/
-    public void WitClick(View view)
+    /** afbeelding dieren: zelf in elkaar gezet met plaatjes van www.pixabay.com **/
+    public void PoesClick(View view)
     {
-        DutchWord.setText("Wit");
+        DutchWord.setText("de poes");
     }
 
-    public void RoodClick(View view)
+    public void KoeClick(View view)
     {
-        DutchWord.setText("Rood");
+        DutchWord.setText("de koe");
     }
 
-    public void OranjeClick(View view)
+    public void HondClick(View view)
     {
-        DutchWord.setText("Oranje");
+        DutchWord.setText("de hond");
     }
 
-    public void GeelClick(View view)
+    public void KonijnClick(View view)
     {
-        DutchWord.setText("Geel");
+        DutchWord.setText("het konijn");
     }
 
-    public void GroenClick(View view)
+    public void VarkenClick(View view)
     {
-        DutchWord.setText("Groen");
+        DutchWord.setText("het varken");
     }
 
-    public void BlauwClick(View view)
+    public void KipClick(View view)
     {
-        DutchWord.setText("Blauw");
+        DutchWord.setText("de kip");
     }
 
-    public void PaarsClick(View view)
+    public void SchaapClick(View view)
     {
-        DutchWord.setText("Paars");
+        DutchWord.setText("het schaap");
     }
 
-    public void ZwartClick(View view)
+    public void PaardClick(View view)
     {
-        DutchWord.setText("Zwart");
-    }
-    public void BruinClick(View view)
-    {
-        DutchWord.setText("Bruin");
-    }
-    public void GrijsClick(View view)
-    {
-        DutchWord.setText("Grijs");
+        DutchWord.setText("het paard");
     }
 
     /** Het woord uit de textview uitspreken **/ // android-developers.blogspot.com
@@ -78,8 +72,8 @@ public class OefKleur extends AppCompatActivity {
             @Override
             public void onInit(int status)
             {
-             translator.setLanguage(Locale.GERMAN); // er is nog geen Nederlands :(
-             translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
+                translator.setLanguage(Locale.GERMAN); // er is nog geen Nederlands :(
+                translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
     }

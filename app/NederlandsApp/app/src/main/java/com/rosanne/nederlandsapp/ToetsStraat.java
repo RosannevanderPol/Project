@@ -135,8 +135,8 @@ public class ToetsStraat extends AppCompatActivity {
             @Override
             public void onInit(int status)
             {
-                translator.setLanguage(Locale.GERMAN); // er is nog geen Nederlands :(
-                translator.speak(String.valueOf(Dutchword.getText()), TextToSpeech.QUEUE_FLUSH, null);
+            translator.setLanguage(Locale.GERMAN); // er is nog geen Nederlands :(
+            translator.speak(String.valueOf(Dutchword.getText()), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
     }

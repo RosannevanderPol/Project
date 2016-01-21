@@ -33,78 +33,135 @@
                 android:gravity="center" />
         </LinearLayout>
         <RelativeLayout
-            android:layout_width="300dp"
-            android:layout_height="370dp">
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="fill_parent"
-                android:layout_height="40dp"
-                android:id="@+id/buttonAuto"
-                android:layout_centerHorizontal="true"
-                android:background="#ffffff"
-                android:onClick="WitClick" />
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="fill_parent"
-                android:layout_height="40dp"
-                android:id="@+id/buttonWeg"
-                android:background="#f40d0d"
-                android:layout_centerHorizontal="true"
-                android:onClick="RoodClick"
-                android:layout_below="@+id/buttonAuto" />
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="fill_parent"
-                android:layout_height="40dp"
-                android:id="@+id/buttonStoep"
-                android:layout_below="@+id/buttonWeg"
-                android:layout_centerHorizontal="true"
-                android:background="#fe7b2a"
-                android:onClick="OranjeClick" />
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="fill_parent"
-                android:layout_height="40dp"
-                android:id="@+id/buttonVoetganger"
-                android:layout_below="@+id/buttonStoep"
-                android:layout_centerHorizontal="true"
-                android:background="#f2d606"
-                android:onClick="GeelClick" />
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="fill_parent"
-                android:layout_height="40dp"
-                android:id="@+id/buttonLantaarnpaal"
-                android:layout_below="@+id/buttonVoetganger"
-                android:layout_centerHorizontal="true"
-                android:background="#52b20d"
-                android:onClick="GroenClick" />
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="fill_parent"
-                android:layout_height="40dp"
-                android:id="@+id/buttonFietser"
-                android:onClick="BlauwClick"
-                android:background="#113ce7"
-                android:layout_below="@+id/buttonLantaarnpaal" />
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="fill_parent"
-                android:layout_height="40dp"
-                android:id="@+id/buttonBoom"
-                android:layout_below="@+id/buttonFietser"
-                android:layout_centerHorizontal="true"
-                android:background="#9042ef"
-                android:onClick="PaarsClick" />
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="fill_parent"
-                android:layout_height="40dp"
-                android:id="@+id/buttonStoplicht"
-                android:layout_below="@+id/buttonBoom"
-                android:layout_centerHorizontal="true"
-                android:background="#000000"
-                android:onClick="ZwartClick" />
+            android:layout_width="match_parent"
+            android:layout_height="380dp">
+            <ImageView
+                android:layout_width="280dp"
+                android:layout_height="500dp"
+                android:id="@+id/imageView"
+                android:background="@drawable/kleur"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_alignParentBottom="false"
+                android:layout_centerInParent="true" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:id="@+id/relativeLayout"
+                android:layout_alignRight="@+id/imageView"
+                android:layout_alignEnd="@+id/imageView"
+                android:layout_alignLeft="@+id/imageView"
+                android:layout_alignStart="@+id/imageView"
+                android:layout_alignParentBottom="true">
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonWit"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="WitClick"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginStart="36dp"
+                    android:layout_above="@+id/buttonZwart"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonGrijs"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="GrijsClick"
+                    android:layout_above="@+id/buttonBlauw"
+                    android:layout_alignLeft="@+id/buttonPaars"
+                    android:layout_alignStart="@+id/buttonPaars" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonBruin"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="BruinClick"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignLeft="@+id/buttonWit"
+                    android:layout_alignStart="@+id/buttonWit"
+                    android:layout_marginTop="21dp" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonOranje"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="OranjeClick"
+                    android:layout_below="@+id/buttonBruin"
+                    android:layout_toRightOf="@+id/buttonRood"
+                    android:layout_toEndOf="@+id/buttonRood" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonGroen"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="GroenClick"
+                    android:layout_above="@+id/buttonWit"
+                    android:layout_toRightOf="@+id/buttonZwart"
+                    android:layout_toEndOf="@+id/buttonZwart" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonRood"
+                    android:onClick="RoodClick"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/buttonWit"
+                    android:layout_toEndOf="@+id/buttonWit" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonZwart"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="ZwartClick"
+                    android:layout_above="@+id/buttonBlauw"
+                    android:layout_toRightOf="@+id/buttonBlauw"
+                    android:layout_toEndOf="@+id/buttonBlauw"
+                    android:layout_marginBottom="67dp" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonPaars"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="PaarsClick"
+                    android:layout_alignTop="@+id/buttonGeel"
+                    android:layout_alignLeft="@+id/buttonGroen"
+                    android:layout_alignStart="@+id/buttonGroen" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonGeel"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="GeelClick"
+                    android:layout_marginTop="25dp"
+                    android:layout_alignTop="@+id/buttonBlauw"
+                    android:layout_toLeftOf="@+id/buttonRood"
+                    android:layout_toStartOf="@+id/buttonRood" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonBlauw"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="BlauwClick"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="84dp" />
+            </RelativeLayout>
         </RelativeLayout>
         <LinearLayout
             android:orientation="horizontal"

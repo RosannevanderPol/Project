@@ -12,9 +12,9 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
-public class ToetsKleur extends AppCompatActivity {
+public class ToetsDieren extends AppCompatActivity {
 
-    public final String[] list = {"Wit", "Zwart", "Rood","Blauw","Groen","Paars","Geel","Oranje","Bruin","Grijs"};
+    public final String[] list = {"de poes", "het varken", "de kip","de hond","het paard","het schaap","het konijn","de koe"};
     public String woord;
     public TextView Dutchword;
     public TextView Nedwoord;
@@ -25,10 +25,11 @@ public class ToetsKleur extends AppCompatActivity {
     public int tellerfout = 0;
     public ImageView smiley;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_toetskleur);
+        setContentView(R.layout.activity_toetsdieren);
 
         Dutchword = (TextView) findViewById(R.id.Dutchword);
         Nedwoord = (TextView) findViewById(R.id.Nedwoord);
@@ -42,7 +43,7 @@ public class ToetsKleur extends AppCompatActivity {
 
     /** Random een woord kiezen uit de te toetsen lijst **/
     private void SelecteerWoord(){
-        woord = list[(int) (Math.random() * list.length)];          // stackoverflow.com
+        woord = list[(int) (Math.random() * list.length)]; // stackoverflow.com
         Dutchword.setText(woord);
         Teller.setText(teller + "/" + (list.length * 2));
     }
@@ -51,14 +52,14 @@ public class ToetsKleur extends AppCompatActivity {
     private void Feedback(){
         if (String.valueOf(Dutchword.getText()) == String.valueOf(Nedwoord.getText())){
             Feedback.setText("  GOED!");
-            smiley.setImageResource(R.drawable.like);
+            smiley.setImageResource(R.drawable.like);       // pixabay.com
             teller += 1;
             Checkteller();
             SelecteerWoord();
         }
         else {
             Feedback.setText("probeer nog eens");
-            smiley.setImageResource(R.drawable.dislike);
+            smiley.setImageResource(R.drawable.dislike);    // pixabay.com
             tellerfout +=1;
         }
     }
@@ -85,59 +86,48 @@ public class ToetsKleur extends AppCompatActivity {
     }
 
     /** Alle aan te wijzen onderdelen **/
-    public void WitClick(View view)
+    public void KoeClick(View view)
     {
-        Nedwoord.setText("Wit");
+        Nedwoord.setText("de koe");
         Feedback();
     }
-    public void RoodClick(View view)
+    public void PoesClick(View view)
     {
-        Nedwoord.setText("Rood");
+        Nedwoord.setText("de poes");
         Feedback();
     }
-    public void OranjeClick(View view)
+    public void HondClick(View view)
     {
-        Nedwoord.setText("Oranje");
+        Nedwoord.setText("de hond");
         Feedback();
     }
-    public void GeelClick(View view)
+    public void SchaapClick(View view)
     {
-        Nedwoord.setText("Geel");
+        Nedwoord.setText("het schaap");
         Feedback();
     }
-    public void GroenClick(View view)
+    public void KonijnClick(View view)
     {
-        Nedwoord.setText("Groen");
+        Nedwoord.setText("het konijn");
         Feedback();
     }
-    public void BlauwClick(View view)
+    public void PaardClick(View view)
     {
-        Nedwoord.setText("Blauw");
+        Nedwoord.setText("het paard");
         Feedback();
     }
-    public void PaarsClick(View view)
+    public void KipClick(View view)
     {
-        Nedwoord.setText("Paars");
+        Nedwoord.setText("de kip");
         Feedback();
     }
-    public void ZwartClick(View view)
+    public void VarkenClick(View view)
     {
-        Nedwoord.setText("Zwart");
-        Feedback();
-    }
-    public void BruinClick(View view)
-    {
-        Nedwoord.setText("Bruin");
-        Feedback();
-    }
-    public void GrijsClick(View view)
-    {
-        Nedwoord.setText("Grijs");
+        Nedwoord.setText("het varken");
         Feedback();
     }
 
-
-    /** Het woord uit de textview uitspreken **/ // android-developers.blogspot.com
+    /** Het woord uit de textview uitspreken **/        // android-developers.blogspot.com
     public void SpeakClick(View view)
     {
         translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()

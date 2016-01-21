@@ -15,7 +15,7 @@ import java.util.Locale;
 
 public class ToetsKleding extends AppCompatActivity {
 
-    public final String[] list = {"de schoen", "de jurk", "de broek","het kind","het overhemd","de baby","de man","de vrouw"};
+    public final String[] list = {"de schoen", "de jas", "de broek","de muts","de sjaal","de laars","de handschoen","de trui"};
     public String woord;
     public TextView Dutchword;
     public TextView Nedwoord;
@@ -91,9 +91,9 @@ public class ToetsKleding extends AppCompatActivity {
         Nedwoord.setText("de schoen");
         Feedback();
     }
-    public void JurkClick(View view)
+    public void TruiClick(View view)
     {
-        Nedwoord.setText("de jurk");
+        Nedwoord.setText("de trui");
         Feedback();
     }
     public void BroekClick(View view)
@@ -101,29 +101,29 @@ public class ToetsKleding extends AppCompatActivity {
         Nedwoord.setText("de broek");
         Feedback();
     }
-    public void KindClick(View view)
+    public void LaarsClick(View view)
     {
-        Nedwoord.setText("het kind");
+        Nedwoord.setText("de laars");
         Feedback();
     }
-    public void OverhemdClick(View view)
+    public void HandschoenClick(View view)
     {
-        Nedwoord.setText("het overhemd");
+        Nedwoord.setText("de handschoen");
         Feedback();
     }
-    public void BabyClick(View view)
+    public void SjaalClick(View view)
     {
-        Nedwoord.setText("de baby");
+        Nedwoord.setText("de sjaal");
         Feedback();
     }
-    public void ManClick(View view)
+    public void MutsClick(View view)
     {
-        Nedwoord.setText("de man");
+        Nedwoord.setText("de muts");
         Feedback();
     }
-    public void VrouwClick(View view)
+    public void JasClick(View view)
     {
-        Nedwoord.setText("de vrouw");
+        Nedwoord.setText("de jas");
         Feedback();
     }
 

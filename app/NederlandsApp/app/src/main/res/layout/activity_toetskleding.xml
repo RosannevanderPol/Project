@@ -17,7 +17,7 @@
         android:id="@+id/linearLayout2">
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="364dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="0.25"
             android:baselineAligned="false">
@@ -51,15 +51,25 @@
                 android:textSize="20dp"
                 android:paddingBottom="15dp"
                 android:singleLine="false" />
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/imageButton3"
+                android:background="@drawable/abc_ic_voice_search_api_mtrl_alpha"
+                android:onClick="SpeakClick"
+                android:layout_alignTop="@+id/linearLayout2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
         </LinearLayout>
         <RelativeLayout
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="380dp">
             <ImageView
-                android:layout_width="230dp"
+                android:layout_width="280dp"
                 android:layout_height="500dp"
                 android:id="@+id/imageView"
-                android:background="@drawable/kleding1"
+                android:background="@drawable/kleding2"
                 android:layout_alignParentLeft="false"
                 android:layout_alignParentStart="false"
                 android:layout_alignParentTop="true"
@@ -74,150 +84,137 @@
                 android:layout_alignRight="@+id/imageView"
                 android:layout_alignEnd="@+id/imageView"
                 android:layout_alignLeft="@+id/imageView"
-                android:layout_alignStart="@+id/imageView">
+                android:layout_alignStart="@+id/imageView"
+                android:layout_alignParentBottom="true">
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonStoep"
+                    android:id="@+id/buttonTrui"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="SchoenClick"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignLeft="@+id/buttonLantaarnpaal"
-                    android:layout_alignStart="@+id/buttonLantaarnpaal" />
+                    android:onClick="TruiClick"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="39dp" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonVoetganger"
-                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="JurkClick"
-                    android:layout_alignBaseline="@+id/buttonLantaarnpaal"
-                    android:layout_alignBottom="@+id/buttonLantaarnpaal"
-                    android:layout_toRightOf="@+id/buttonFietser"
-                    android:layout_toEndOf="@+id/buttonFietser" />
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/buttonLantaarnpaal"
+                    android:id="@+id/buttonBroek"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="BroekClick"
-                    android:layout_above="@+id/buttonFietser"
+                    android:layout_alignTop="@+id/buttonHandschoen"
+                    android:layout_alignLeft="@+id/buttonMuts"
+                    android:layout_alignStart="@+id/buttonMuts" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonSjaal"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="SjaalClick"
+                    android:layout_marginTop="43dp"
+                    android:layout_below="@+id/buttonMuts"
+                    android:layout_alignLeft="@+id/buttonBroek"
+                    android:layout_alignStart="@+id/buttonBroek" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonLaars"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="LaarsClick"
+                    android:layout_alignTop="@+id/buttonHandschoen"
+                    android:layout_alignLeft="@+id/buttonJas"
+                    android:layout_alignStart="@+id/buttonJas" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonSchoen"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="SchoenClick"
+                    android:layout_alignTop="@+id/buttonHandschoen"
+                    android:layout_toRightOf="@+id/buttonHandschoen"
+                    android:layout_toEndOf="@+id/buttonHandschoen"
+                    android:layout_marginTop="62dp" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonMuts"
+                    android:onClick="MutsClick"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginStart="39dp"
+                    android:layout_above="@+id/buttonHandschoen"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginLeft="26dp"
-                    android:layout_marginStart="26dp" />
+                    android:layout_alignParentStart="true" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonFietser"
-                    android:onClick="KindClick"
+                    android:id="@+id/buttonJas"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:layout_above="@+id/buttonStoep"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="27dp" />
+                    android:onClick="JasClick"
+                    android:layout_alignBottom="@+id/buttonSjaal"
+                    android:layout_toRightOf="@+id/buttonTrui"
+                    android:layout_toEndOf="@+id/buttonTrui" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonStoplicht"
+                    android:id="@+id/buttonHandschoen"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="OverhemdClick"
-                    android:layout_above="@+id/buttonVoetganger"
-                    android:layout_toRightOf="@+id/buttonBoom"
-                    android:layout_toEndOf="@+id/buttonBoom"
-                    android:layout_marginBottom="26dp" />
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/buttonBoom"
-                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="BabyClick"
-                    android:layout_above="@+id/buttonStoplicht"
-                    android:layout_alignLeft="@+id/buttonLantaarnpaal"
-                    android:layout_alignStart="@+id/buttonLantaarnpaal" />
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/buttonMan"
-                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="ManClick"
-                    android:layout_alignBaseline="@+id/buttonBoom"
-                    android:layout_alignBottom="@+id/buttonBoom"
-                    android:layout_toRightOf="@+id/buttonBoom"
-                    android:layout_toEndOf="@+id/buttonBoom" />
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/buttonVrouw"
-                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="VrouwClick"
-                    android:layout_below="@+id/buttonMan"
-                    android:layout_toRightOf="@+id/buttonStoplicht"
-                    android:layout_toEndOf="@+id/buttonStoplicht" />
+                    android:onClick="HandschoenClick"
+                    android:layout_below="@+id/buttonTrui"
+                    android:layout_toRightOf="@+id/buttonBroek"
+                    android:layout_toEndOf="@+id/buttonBroek"
+                    android:layout_marginTop="128dp" />
             </RelativeLayout>
         </RelativeLayout>
+
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:weightSum="0.25"
-            android:padding="2dp">
-            <LinearLayout
-                android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageButton2"
+                android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+                android:onClick="TerugClick" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:id="@+id/imageView3" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/smiley" />
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
-                <ImageButton
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:id="@+id/imageButton2"
-                    android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha"
-                    android:onClick="TerugClick" />
-
-                <ImageView
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:id="@+id/imageView3" />
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/smiley" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/feedback"
-                    android:textColor="#3b42ca"
-                    android:layout_weight="0.01"
-                    android:textSize="20dp"
-                    android:textAlignment="center"
-                    android:paddingTop="15dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text=" "
-                    android:id="@+id/Nedwoord"
-                    android:textSize="1sp"
-                    android:visibility="invisible" />
-            </LinearLayout>
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/feedback"
+                android:textColor="#3b42ca"
+                android:layout_weight="0.01"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:paddingTop="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=" "
+                android:id="@+id/Nedwoord"
+                android:textSize="1sp"
+                android:visibility="invisible" />
         </LinearLayout>
+
     </LinearLayout>
 
-    <ImageButton
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:id="@+id/imageButton3"
-        android:background="@drawable/abc_ic_voice_search_api_mtrl_alpha"
-        android:onClick="SpeakClick"
-        android:layout_alignTop="@+id/linearLayout2"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
 </RelativeLayout>

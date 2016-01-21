@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".OefKleding"
+    tools:context=".OefKeuken"
     android:background="#f2bfa2">
     <LinearLayout
         android:orientation="vertical"
@@ -32,7 +32,7 @@
                 android:layout_width="280dp"
                 android:layout_height="500dp"
                 android:id="@+id/imageView"
-                android:background="@drawable/kleding2"
+                android:background="@drawable/keuken"
                 android:layout_alignParentLeft="false"
                 android:layout_alignParentStart="false"
                 android:layout_alignParentTop="true"
@@ -53,87 +53,86 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonTrui"
+                    android:id="@+id/buttonPan"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="TruiClick"
+                    android:onClick="PanClick"
+                    android:layout_above="@+id/buttonGlas"
+                    android:layout_alignLeft="@+id/buttonLepel"
+                    android:layout_alignStart="@+id/buttonLepel" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonKoekenpan"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="KoekenpanClick"
                     android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="39dp" />
+                    android:layout_alignLeft="@+id/buttonGlas"
+                    android:layout_alignStart="@+id/buttonGlas"
+                    android:layout_marginTop="23dp" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonBroek"
+                    android:id="@+id/buttonGlas"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="BroekClick"
-                    android:layout_alignTop="@+id/buttonHandschoen"
-                    android:layout_alignLeft="@+id/buttonMuts"
-                    android:layout_alignStart="@+id/buttonMuts" />
+                    android:onClick="GlasClick"
+                    android:layout_above="@+id/buttonLepel"
+                    android:layout_alignLeft="@+id/buttonBeker"
+                    android:layout_alignStart="@+id/buttonBeker" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonSjaal"
+                    android:id="@+id/buttonVork"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="SjaalClick"
-                    android:layout_marginTop="43dp"
-                    android:layout_below="@+id/buttonMuts"
-                    android:layout_alignLeft="@+id/buttonBroek"
-                    android:layout_alignStart="@+id/buttonBroek" />
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/buttonLaars"
-                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="LaarsClick"
-                    android:layout_alignTop="@+id/buttonHandschoen"
-                    android:layout_alignLeft="@+id/buttonJas"
-                    android:layout_alignStart="@+id/buttonJas" />
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/buttonSchoen"
-                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="SchoenClick"
-                    android:layout_alignTop="@+id/buttonHandschoen"
-                    android:layout_toRightOf="@+id/buttonHandschoen"
-                    android:layout_toEndOf="@+id/buttonHandschoen"
-                    android:layout_marginTop="62dp" />
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/buttonMuts"
-                    android:onClick="MutsClick"
-                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:layout_marginLeft="39dp"
-                    android:layout_marginStart="39dp"
-                    android:layout_above="@+id/buttonHandschoen"
+                    android:onClick="VorkClick"
+                    android:layout_below="@+id/buttonBord"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonJas"
+                    android:id="@+id/buttonLepel"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="JasClick"
-                    android:layout_alignBottom="@+id/buttonSjaal"
-                    android:layout_toRightOf="@+id/buttonTrui"
-                    android:layout_toEndOf="@+id/buttonTrui" />
+                    android:onClick="LepelClick"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/buttonMes"
+                    android:layout_toStartOf="@+id/buttonMes" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonHandschoen"
+                    android:id="@+id/buttonBord"
+                    android:onClick="BordClick"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="HandschoenClick"
-                    android:layout_below="@+id/buttonTrui"
-                    android:layout_toRightOf="@+id/buttonBroek"
-                    android:layout_toEndOf="@+id/buttonBroek"
-                    android:layout_marginTop="128dp" />
+                    android:layout_above="@+id/buttonMes"
+                    android:layout_toLeftOf="@+id/buttonMes"
+                    android:layout_toStartOf="@+id/buttonMes" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonMes"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="MesClick"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="38dp" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonBeker"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="BekerClick"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="94dp" />
             </RelativeLayout>
         </RelativeLayout>
         <LinearLayout

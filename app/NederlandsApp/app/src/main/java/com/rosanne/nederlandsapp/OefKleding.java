@@ -23,15 +23,15 @@ public class OefKleding extends AppCompatActivity {
     }
 
     /** Alle aan te wijzen onderdelen **/
-    /** afbeelding kleding1: http://www.absolutefacts.nl/ **/
+    /** afbeelding kleding: zelf geknutselt uit de Ikea gids **/
     public void SchoenClick(View view)
     {
         DutchWord.setText("de schoen");
     }
 
-    public void JurkClick(View view)
+    public void SjaalClick(View view)
     {
-        DutchWord.setText("de jurk");
+        DutchWord.setText("de sjaal");
     }
 
     public void BroekClick(View view)
@@ -39,29 +39,29 @@ public class OefKleding extends AppCompatActivity {
         DutchWord.setText("de broek");
     }
 
-    public void KindClick(View view)
+    public void MutsClick(View view)
     {
-        DutchWord.setText("het kind");
+        DutchWord.setText("de muts");
     }
 
-    public void OverhemdClick(View view)
+    public void JasClick(View view)
     {
-        DutchWord.setText("het overhemd");
+        DutchWord.setText("de jas");
     }
 
-    public void BabyClick(View view)
+    public void TruiClick(View view)
     {
-        DutchWord.setText("de baby");
+        DutchWord.setText("de trui");
     }
 
-    public void ManClick(View view)
+    public void LaarsClick(View view)
     {
-        DutchWord.setText("de man");
+        DutchWord.setText("de laars");
     }
 
-    public void VrouwClick(View view)
+    public void HandschoenClick(View view)
     {
-        DutchWord.setText("de vrouw");
+        DutchWord.setText("de handschoen");
     }
 
     /** Het woord uit de textview uitspreken **/ // android-developers.blogspot.com
@@ -72,8 +72,8 @@ public class OefKleding extends AppCompatActivity {
             @Override
             public void onInit(int status)
             {
-                translator.setLanguage(Locale.GERMAN); // er is nog geen Nederlands :(
-                translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
+            translator.setLanguage(Locale.GERMAN); // er is nog geen Nederlands :(
+            translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
     }

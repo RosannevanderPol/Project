@@ -1,14 +1,15 @@
 package com.rosanne.nederlandsapp;
 
 import android.content.Intent;
+import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import android.speech.tts.TextToSpeech;
+
 import java.util.Locale;
 
-public class OefKleur extends AppCompatActivity {
+public class OefCijfers extends AppCompatActivity {
 
     public TextView DutchWord;
     public TextToSpeech translator;
@@ -16,58 +17,61 @@ public class OefKleur extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_oefkleur);
+        setContentView(R.layout.activity_oefcijfers);
 
         DutchWord = (TextView) findViewById(R.id.dutchword);
     }
 
     /** Alle aan te wijzen onderdelen **/
-    public void WitClick(View view)
+    /** afbeelding cijfers: www.aduis.nl **/
+    public void NulClick(View view)
     {
-        DutchWord.setText("Wit");
+        DutchWord.setText("nul");
     }
 
-    public void RoodClick(View view)
+    public void EenClick(View view)
     {
-        DutchWord.setText("Rood");
+        DutchWord.setText("één");
     }
 
-    public void OranjeClick(View view)
+    public void TweeClick(View view)
     {
-        DutchWord.setText("Oranje");
+        DutchWord.setText("twee");
     }
 
-    public void GeelClick(View view)
+    public void DrieClick(View view)
     {
-        DutchWord.setText("Geel");
+        DutchWord.setText("drie");
     }
 
-    public void GroenClick(View view)
+    public void VierClick(View view)
     {
-        DutchWord.setText("Groen");
+        DutchWord.setText("vier");
     }
 
-    public void BlauwClick(View view)
+    public void VijfClick(View view)
     {
-        DutchWord.setText("Blauw");
+        DutchWord.setText("Vijf");
     }
 
-    public void PaarsClick(View view)
+    public void ZesClick(View view)
     {
-        DutchWord.setText("Paars");
+        DutchWord.setText("zes");
     }
 
-    public void ZwartClick(View view)
+    public void ZevenClick(View view)
     {
-        DutchWord.setText("Zwart");
+        DutchWord.setText("zeven");
     }
-    public void BruinClick(View view)
+
+    public void AchtClick(View view)
     {
-        DutchWord.setText("Bruin");
+        DutchWord.setText("acht");
     }
-    public void GrijsClick(View view)
+
+    public void NegenClick(View view)
     {
-        DutchWord.setText("Grijs");
+        DutchWord.setText("negen");
     }
 
     /** Het woord uit de textview uitspreken **/ // android-developers.blogspot.com
@@ -78,8 +82,8 @@ public class OefKleur extends AppCompatActivity {
             @Override
             public void onInit(int status)
             {
-             translator.setLanguage(Locale.GERMAN); // er is nog geen Nederlands :(
-             translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
+                translator.setLanguage(Locale.GERMAN); // er is nog geen Nederlands :(
+                translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
     }

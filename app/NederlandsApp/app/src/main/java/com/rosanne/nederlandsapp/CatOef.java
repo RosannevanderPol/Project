@@ -19,18 +19,44 @@ public class CatOef extends AppCompatActivity {
         Intent intent = new Intent(this, OefKleur.class);
         startActivity(intent);
     }
-
-    /** Kies categorie **/
     public void StraatClick(View view)
     {
-        Intent intent = new Intent(this, oefstraat.class);
+        Intent intent = new Intent(this, OefStraat.class);
         startActivity(intent);
     }
-
-    /** Kies categorie **/
     public void KledingClick(View view)
     {
         Intent intent = new Intent(this, OefKleding.class);
+        startActivity(intent);
+    }
+    public void CijfersClick(View view)
+    {
+        Intent intent = new Intent(this, OefCijfers.class);
+        startActivity(intent);
+    }
+    public void HuiskamerClick(View view)
+    {
+        Intent intent = new Intent(this, OefHuiskamer.class);
+        startActivity(intent);
+    }
+    public void LichaamClick(View view)
+    {
+        Intent intent = new Intent(this, OefLichaam.class);
+        startActivity(intent);
+    }
+    public void DierenClick(View view)
+    {
+        Intent intent = new Intent(this, OefDieren.class);
+        startActivity(intent);
+    }
+    public void KeukenClick(View view)
+    {
+        Intent intent = new Intent(this, OefKeuken.class);
+        startActivity(intent);
+    }
+    public void GereedschapClick(View view)
+    {
+        Intent intent = new Intent(this, OefGereedschap.class);
         startActivity(intent);
     }
 

@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:textSize="25sp"
             android:text="oefenen"
-            android:id="@+id/buttonLantaarnpaal"
+            android:id="@+id/buttonBroek"
             android:onClick="OefenenClick"
             android:padding="15dp"
             android:allowUndo="false"

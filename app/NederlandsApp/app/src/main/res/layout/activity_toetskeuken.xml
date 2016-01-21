@@ -7,8 +7,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".ToetsKleur"
+    tools:context="com.rosanne.nederlandsapp.ToetsKeuken"
     android:background="#f2bfa2">
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -48,13 +49,18 @@
                 android:textColor="#3b42ca"
                 android:layout_weight="0.07"
                 android:textSize="20dp"
-                android:paddingBottom="15dp"/>
+                android:paddingBottom="15dp"
+                android:singleLine="false" />
+
             <ImageButton
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:id="@+id/imageButton3"
                 android:background="@drawable/abc_ic_voice_search_api_mtrl_alpha"
-                android:onClick="SpeakClick" />
+                android:onClick="SpeakClick"
+                android:layout_alignTop="@+id/linearLayout2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
         </LinearLayout>
         <RelativeLayout
             android:layout_width="match_parent"
@@ -63,7 +69,7 @@
                 android:layout_width="280dp"
                 android:layout_height="500dp"
                 android:id="@+id/imageView"
-                android:background="@drawable/kleur"
+                android:background="@drawable/keuken"
                 android:layout_alignParentLeft="false"
                 android:layout_alignParentStart="false"
                 android:layout_alignParentTop="true"
@@ -84,159 +90,129 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonWit"
+                    android:id="@+id/buttonPan"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="WitClick"
-                    android:layout_marginLeft="36dp"
-                    android:layout_marginStart="36dp"
-                    android:layout_above="@+id/buttonZwart"
+                    android:onClick="PanClick"
+                    android:layout_above="@+id/buttonGlas"
+                    android:layout_alignLeft="@+id/buttonLepel"
+                    android:layout_alignStart="@+id/buttonLepel" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonKoekenpan"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="KoekenpanClick"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignLeft="@+id/buttonGlas"
+                    android:layout_alignStart="@+id/buttonGlas"
+                    android:layout_marginTop="23dp" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonGlas"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="GlasClick"
+                    android:layout_above="@+id/buttonLepel"
+                    android:layout_alignLeft="@+id/buttonBeker"
+                    android:layout_alignStart="@+id/buttonBeker" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonVork"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="VorkClick"
+                    android:layout_below="@+id/buttonBord"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonGrijs"
+                    android:id="@+id/buttonLepel"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="GrijsClick"
-                    android:layout_above="@+id/buttonBlauw"
-                    android:layout_alignLeft="@+id/buttonPaars"
-                    android:layout_alignStart="@+id/buttonPaars" />
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/buttonBruin"
-                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="BruinClick"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignLeft="@+id/buttonWit"
-                    android:layout_alignStart="@+id/buttonWit"
-                    android:layout_marginTop="21dp" />
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/buttonOranje"
-                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="OranjeClick"
-                    android:layout_below="@+id/buttonBruin"
-                    android:layout_toRightOf="@+id/buttonRood"
-                    android:layout_toEndOf="@+id/buttonRood" />
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/buttonGroen"
-                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="GroenClick"
-                    android:layout_above="@+id/buttonWit"
-                    android:layout_toRightOf="@+id/buttonZwart"
-                    android:layout_toEndOf="@+id/buttonZwart" />
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/buttonRood"
-                    android:onClick="RoodClick"
-                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="LepelClick"
                     android:layout_centerVertical="true"
-                    android:layout_toRightOf="@+id/buttonWit"
-                    android:layout_toEndOf="@+id/buttonWit" />
+                    android:layout_toLeftOf="@+id/buttonMes"
+                    android:layout_toStartOf="@+id/buttonMes" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonZwart"
+                    android:id="@+id/buttonBord"
+                    android:onClick="BordClick"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="ZwartClick"
-                    android:layout_above="@+id/buttonBlauw"
-                    android:layout_toRightOf="@+id/buttonBlauw"
-                    android:layout_toEndOf="@+id/buttonBlauw"
-                    android:layout_marginBottom="67dp" />
+                    android:layout_above="@+id/buttonMes"
+                    android:layout_toLeftOf="@+id/buttonMes"
+                    android:layout_toStartOf="@+id/buttonMes" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonPaars"
+                    android:id="@+id/buttonMes"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="PaarsClick"
-                    android:layout_alignTop="@+id/buttonGeel"
-                    android:layout_alignLeft="@+id/buttonGroen"
-                    android:layout_alignStart="@+id/buttonGroen" />
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/buttonGeel"
-                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="GeelClick"
-                    android:layout_marginTop="25dp"
-                    android:layout_alignTop="@+id/buttonBlauw"
-                    android:layout_toLeftOf="@+id/buttonRood"
-                    android:layout_toStartOf="@+id/buttonRood" />
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/buttonBlauw"
-                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="BlauwClick"
+                    android:onClick="MesClick"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="84dp" />
+                    android:layout_marginBottom="38dp" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonBeker"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="BekerClick"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="94dp" />
             </RelativeLayout>
         </RelativeLayout>
-
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:weightSum="0.25"
-            android:padding="2dp" >
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageButton2"
+                android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+                android:onClick="TerugClick" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:id="@+id/imageView3" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/smiley" />
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="horizontal" >
-
-                <ImageButton
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:id="@+id/imageButton4"
-                    android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha"
-                    android:onClick="TerugClick" />
-
-                <ImageView
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:id="@+id/imageView4" />
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:id="@+id/smiley" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/feedback"
-                    android:textColor="#3b42ca"
-                    android:layout_weight="0.01"
-                    android:textSize="20dp"
-                    android:textAlignment="center"
-                    android:paddingTop="15dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text=" "
-                    android:id="@+id/Nedwoord"
-                    android:textSize="1sp"
-                    android:visibility="invisible" />
-            </LinearLayout>
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/feedback"
+                android:textColor="#3b42ca"
+                android:layout_weight="0.01"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:paddingTop="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=" "
+                android:id="@+id/Nedwoord"
+                android:textSize="1sp"
+                android:visibility="invisible" />
         </LinearLayout>
+
     </LinearLayout>
+
 </RelativeLayout>

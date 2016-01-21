@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
-public class oefstraat extends AppCompatActivity {
+public class OefStraat extends AppCompatActivity {
 
     public TextView DutchWord;
     public TextToSpeech translator;

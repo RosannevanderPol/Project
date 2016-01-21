@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".OefKleding"
+    tools:context=".OefCijfers"
     android:background="#f2bfa2">
     <LinearLayout
         android:orientation="vertical"
@@ -32,7 +32,7 @@
                 android:layout_width="280dp"
                 android:layout_height="500dp"
                 android:id="@+id/imageView"
-                android:background="@drawable/kleding2"
+                android:background="@drawable/cijfers"
                 android:layout_alignParentLeft="false"
                 android:layout_alignParentStart="false"
                 android:layout_alignParentTop="true"
@@ -53,87 +53,103 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonTrui"
+                    android:id="@+id/buttonNul"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="TruiClick"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="39dp" />
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/buttonBroek"
-                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="BroekClick"
-                    android:layout_alignTop="@+id/buttonHandschoen"
-                    android:layout_alignLeft="@+id/buttonMuts"
-                    android:layout_alignStart="@+id/buttonMuts" />
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/buttonSjaal"
-                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="SjaalClick"
-                    android:layout_marginTop="43dp"
-                    android:layout_below="@+id/buttonMuts"
-                    android:layout_alignLeft="@+id/buttonBroek"
-                    android:layout_alignStart="@+id/buttonBroek" />
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/buttonLaars"
-                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="LaarsClick"
-                    android:layout_alignTop="@+id/buttonHandschoen"
-                    android:layout_alignLeft="@+id/buttonJas"
-                    android:layout_alignStart="@+id/buttonJas" />
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/buttonSchoen"
-                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="SchoenClick"
-                    android:layout_alignTop="@+id/buttonHandschoen"
-                    android:layout_toRightOf="@+id/buttonHandschoen"
-                    android:layout_toEndOf="@+id/buttonHandschoen"
-                    android:layout_marginTop="62dp" />
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/buttonMuts"
-                    android:onClick="MutsClick"
-                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:layout_marginLeft="39dp"
-                    android:layout_marginStart="39dp"
-                    android:layout_above="@+id/buttonHandschoen"
+                    android:onClick="NulClick"
+                    android:layout_alignTop="@+id/buttonEen"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonJas"
+                    android:id="@+id/buttonEen"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="JasClick"
-                    android:layout_alignBottom="@+id/buttonSjaal"
-                    android:layout_toRightOf="@+id/buttonTrui"
-                    android:layout_toEndOf="@+id/buttonTrui" />
+                    android:onClick="EenClick"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignLeft="@+id/buttonZes"
+                    android:layout_alignStart="@+id/buttonZes"
+                    android:layout_marginTop="41dp" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:id="@+id/buttonHandschoen"
+                    android:id="@+id/buttonTwee"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-                    android:onClick="HandschoenClick"
-                    android:layout_below="@+id/buttonTrui"
-                    android:layout_toRightOf="@+id/buttonBroek"
-                    android:layout_toEndOf="@+id/buttonBroek"
-                    android:layout_marginTop="128dp" />
+                    android:onClick="TweeClick"
+                    android:layout_alignTop="@+id/buttonEen"
+                    android:layout_centerHorizontal="true" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonDrie"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="DrieClick"
+                    android:layout_alignTop="@+id/buttonTwee"
+                    android:layout_toLeftOf="@+id/buttonVier"
+                    android:layout_toStartOf="@+id/buttonVier" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonVier"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="VierClick"
+                    android:layout_alignTop="@+id/buttonDrie"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonVijf"
+                    android:onClick="VijfClick"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:layout_alignTop="@+id/buttonZes"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonZes"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="ZesClick"
+                    android:layout_alignTop="@+id/buttonZeven"
+                    android:layout_toLeftOf="@+id/buttonZeven"
+                    android:layout_toStartOf="@+id/buttonZeven" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonZeven"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="ZevenClick"
+                    android:layout_alignTop="@+id/buttonAcht"
+                    android:layout_alignLeft="@+id/buttonTwee"
+                    android:layout_alignStart="@+id/buttonTwee" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonAcht"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="AchtClick"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/buttonDrie"
+                    android:layout_toStartOf="@+id/buttonDrie"
+                    android:layout_marginBottom="131dp" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonNegen"
+                    android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+                    android:onClick="NegenClick"
+                    android:layout_alignBottom="@+id/buttonAcht"
+                    android:layout_toRightOf="@+id/buttonDrie"
+                    android:layout_toEndOf="@+id/buttonDrie" />
             </RelativeLayout>
         </RelativeLayout>
         <LinearLayout

@@ -11,6 +11,7 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -18,10 +19,22 @@
         <activity android:name=".OefKleur" />
         <activity android:name=".ToetsKleur" />
         <activity android:name=".CatToets" />
-        <activity android:name=".oefstraat" />
+        <activity android:name=".OefStraat" />
         <activity android:name=".ToetsStraat" />
         <activity android:name=".OefKleding" />
-        <activity android:name=".ToetsKleding"></activity>
+        <activity android:name=".ToetsKleding" />
+        <activity android:name=".OefCijfers" />
+        <activity android:name=".OefHuiskamer" />
+        <activity android:name=".OefLichaam" />
+        <activity android:name=".OefDieren" />
+        <activity android:name=".OefKeuken" />
+        <activity android:name=".OefGereedschap" />
+        <activity android:name=".ToetsCijfers" />
+        <activity android:name=".ToetsHuiskamer" />
+        <activity android:name=".ToetsLichaam" />
+        <activity android:name=".ToetsDieren" />
+        <activity android:name=".ToetsKeuken" />
+        <activity android:name=".ToetsGereedschap"></activity>
     </application>
 
 </manifest>

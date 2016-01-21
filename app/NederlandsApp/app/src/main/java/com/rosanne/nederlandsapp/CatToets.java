@@ -19,18 +19,44 @@ public class CatToets extends AppCompatActivity {
         Intent intent = new Intent(this, ToetsKleur.class);
         startActivity(intent);
     }
-
-    /** Kies categorie **/
     public void StraatClick(View view)
     {
         Intent intent = new Intent(this, ToetsStraat.class);
         startActivity(intent);
     }
-
-    /** Kies categorie **/
     public void KledingClick(View view)
     {
         Intent intent = new Intent(this, ToetsKleding.class);
+        startActivity(intent);
+    }
+    public void CijfersClick(View view)
+    {
+        Intent intent = new Intent(this, ToetsCijfers.class);
+        startActivity(intent);
+    }
+    public void DierenClick(View view)
+    {
+        Intent intent = new Intent(this, ToetsDieren.class);
+        startActivity(intent);
+    }
+    public void HuiskamerClick(View view)
+    {
+        Intent intent = new Intent(this, ToetsHuiskamer.class);
+        startActivity(intent);
+    }
+    public void KeukenClick(View view)
+    {
+        Intent intent = new Intent(this, ToetsKeuken.class);
+        startActivity(intent);
+    }
+    public void LichaamClick(View view)
+    {
+        Intent intent = new Intent(this, ToetsLichaam.class);
+        startActivity(intent);
+    }
+    public void GereedschapClick(View view)
+    {
+        Intent intent = new Intent(this, ToetsGereedschap.class);
         startActivity(intent);
     }
 
