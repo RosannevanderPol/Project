@@ -67,3 +67,13 @@ ziek
 # Day 14
 * Doorgestampt en alle andere categorieën (cijfers, dieren, huiskamer, keuken, lichaam en gereedschap) geïmplemnteerd in de oefen- én toetsmodus en de afbeeling van 'kleuren' aangespast om in alle categoriën dezelfde stijl te hanteren, de app is volledig speelbaar.
 
+# Day 15
+* Presentatie.
+* Aandachtspunten: text-to-speech al opstarten zodat het bij de eerste keer klikken op een microfoontje meteen snel werkt, de teller laten stoppen als de laatste geweest is zodat je niet '21/20' op de achtergrond ziet.
+* Zelf wil ik de layout nog wat aanpassen en een betere random fuctie maken die de woorden kiest in de toets-modus, nu komt het soms zelfs voor dat een woord drie keer achter elkaar gevraagd wordt. Dat moet niet.
+
+# Weekend
+
+# Day 16
+* Alle aandachtspunten aangepakt. Text-to-speech start meteen en werkt snel, layout aangepast, de teller stopt bij de laatste vraag en de randomfunctie kiest nu random uit de hele lijst min het huidige woord. 
+
