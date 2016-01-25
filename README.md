@@ -5,20 +5,17 @@ Een app ontworpen om het vocabulaire van tweedetaalleerders van het Nederlands t
 In zowel de 'oefen-' als de 'toets-modus' kan de gebruiker een categorie kiezen waarin hij of zij zijn of haar vocabulaire zou willen verbeteren of toetsen. De volgende categorieën komen aan bod (de catorieën en de woorden zal ik zelf verzinnen, en inspriratie opdoen uit al bestaande taalapps):
 * kleuren
 * cijfers
-* maanden
-* dagen
 * kleding
-* fruit
 * dieren
 * lichaamsdelen
 * keuken
 * woonkamer
 * op straat
+* gereedschap
 
 ![schets](https://github.com/RosannevanderPol/Project/blob/master/doc/schets.jpg?raw=true)
 
-De plaatjes zal ik zelf proberen samen te stellen uit afbeeldingen die ik van internet haal. 
-Ik speel nog met het idee of ik verschillende manieren van oefenen implementeer.
+De 'klikbare' afbeeldingen heb ik zelf samengestelt. De afbeeldingen van de categorieën kleuren, cijfers, dieren en lichaam heb ik gemaakt met afbeeldingen van internet en met paint, de categorieën huiskamer, keuken, kleding en gereedschap heb ik zelf geknipt en geplakt uit folders.
 
 Rosanne van der Pol - 10564268
 
