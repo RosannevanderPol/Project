@@ -56,14 +56,14 @@ public class ToetsKeuken extends AppCompatActivity {
     private void Feedback(){
         if (String.valueOf(Dutchword.getText()) == String.valueOf(Nedwoord.getText())){
             Feedback.setText("goed");
-            smiley.setImageResource(R.drawable.like);       // pixabay.com
+            smiley.setImageResource(R.drawable.up);       // pixabay.com
             teller += 1;
             Checkteller();
             SelecteerWoord();
         }
         else {
             Feedback.setText("fout");
-            smiley.setImageResource(R.drawable.dislike);    // pixabay.com
+            smiley.setImageResource(R.drawable.down);    // pixabay.com
             tellerfout +=1;
         }
     }

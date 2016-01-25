@@ -57,14 +57,14 @@ public class ToetsStraat extends AppCompatActivity {
     private void Feedback(){
         if (String.valueOf(Dutchword.getText()) == String.valueOf(Nedwoord.getText())){
             Feedback.setText("fout");
-            smiley.setImageResource(R.drawable.like);
+            smiley.setImageResource(R.drawable.up);
             teller += 1;
             Checkteller();
             SelecteerWoord();
         }
         else {
             Feedback.setText("fout");
-            smiley.setImageResource(R.drawable.dislike);
+            smiley.setImageResource(R.drawable.down);
             tellerfout +=1;
         }
     }
