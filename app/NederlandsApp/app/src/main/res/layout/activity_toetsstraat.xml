@@ -28,7 +28,7 @@
                 android:text="1/16"
                 android:id="@+id/Teller"
                 android:textColor="#ffffff"
-                android:layout_weight="0.01"
+                android:layout_weight="0.02"
                 android:textSize="15dp" />
             <TextView
                 android:layout_width="wrap_content"
@@ -52,21 +52,15 @@
                 android:paddingBottom="15dp"
                 android:singleLine="false" />
 
-            <ImageButton
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:id="@+id/imageButton3"
-                android:background="@drawable/abc_ic_voice_search_api_mtrl_alpha"
-                android:onClick="SpeakClick"
-                 />
         </LinearLayout>
         <RelativeLayout
-            android:layout_width="290dp"
-            android:layout_height="380dp">
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_gravity="center_horizontal">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="400dp"
                 android:id="@+id/imageView"
                 android:background="@drawable/opstraat" />
 
@@ -75,7 +69,9 @@
                 android:layout_height="match_parent"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true">
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/imageView"
+                android:layout_alignEnd="@+id/imageView">
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
@@ -106,8 +102,7 @@
                     android:id="@+id/buttonLantaarn"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="LantaarnClick"
-                    android:layout_marginBottom="31dp"
-                    android:layout_above="@+id/buttonFietser"
+                    android:layout_below="@+id/buttonStoplicht"
                     android:layout_centerHorizontal="true" />
 
                 <Button
@@ -129,10 +124,9 @@
                     android:id="@+id/buttonBoom"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="BoomClick"
-                    android:layout_alignBaseline="@+id/buttonStoplicht"
-                    android:layout_alignBottom="@+id/buttonStoplicht"
-                    android:layout_alignLeft="@+id/buttonAuto"
-                    android:layout_alignStart="@+id/buttonAuto" />
+                    android:layout_alignTop="@+id/buttonStoplicht"
+                    android:layout_toLeftOf="@+id/buttonAuto"
+                    android:layout_toStartOf="@+id/buttonAuto" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
@@ -141,9 +135,10 @@
                     android:id="@+id/buttonStoplicht"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="StoplichtClick"
-                    android:layout_above="@+id/buttonLantaarn"
+                    android:layout_alignParentTop="true"
                     android:layout_toLeftOf="@+id/buttonVoetganger"
-                    android:layout_toStartOf="@+id/buttonVoetganger" />
+                    android:layout_toStartOf="@+id/buttonVoetganger"
+                    android:layout_marginTop="79dp" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
@@ -173,53 +168,67 @@
             </RelativeLayout>
 
         </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:weightSum="0.25">
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="4dp">
-                <ImageButton
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:id="@+id/imageButton2"
-                    android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha"
-                    android:onClick="TerugClick" />
+            android:layout_height="wrap_content">
 
-                <ImageView
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:id="@+id/imageView5" />
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageButton2"
+                android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+                android:onClick="TerugClick" />
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:id="@+id/smiley"
-                    android:baselineAlignBottom="true" />
+            <TextView
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/feedback"
+                android:textColor="#3b42ca"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:paddingTop="15dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/feedback"
-                    android:textColor="#3b42ca"
-                    android:layout_weight="0.01"
-                    android:textSize="20dp"
-                    android:textAlignment="center"
-                    android:paddingTop="15dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text=" "
-                    android:id="@+id/Nedwoord"
-                    android:textSize="1sp"
-                    android:visibility="invisible" />
-            </LinearLayout>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/smiley"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/imageButton3"
+                android:layout_alignStart="@+id/imageButton3" />
+
         </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=" "
+            android:id="@+id/Nedwoord"
+            android:textSize="1sp"
+            android:visibility="invisible" />
     </LinearLayout>
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/imageButton3"
+        android:background="@drawable/abc_ic_voice_search_api_mtrl_alpha"
+        android:onClick="SpeakClick"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
 </RelativeLayout>

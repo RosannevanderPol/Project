@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.Locale;
+import java.util.Random;
 
 public class ToetsLichaam extends AppCompatActivity {
 
@@ -43,22 +44,26 @@ public class ToetsLichaam extends AppCompatActivity {
 
     /** Random een woord kiezen uit de te toetsen lijst **/
     private void SelecteerWoord(){
-        woord = list[(int) (Math.random() * list.length)]; // stackoverflow.com
-        Dutchword.setText(woord);
-        Teller.setText(teller + "/" + (list.length * 2));
+        if (teller <= (list.length * 2)) {
+            do {
+                woord = list[(new Random().nextInt(list.length))];}     // stackoverflow.com
+            while (woord == String.valueOf(Nedwoord.getText()));
+            Dutchword.setText(woord);
+            Teller.setText((teller) + "/" + (list.length * 2));
+        }
     }
 
     /** Check of het antwoord goed is en geef feedback **/
     private void Feedback(){
         if (String.valueOf(Dutchword.getText()) == String.valueOf(Nedwoord.getText())){
-            Feedback.setText("  GOED!");
+            Feedback.setText("goed");
             smiley.setImageResource(R.drawable.like);       // pixabay.com
             teller += 1;
             Checkteller();
             SelecteerWoord();
         }
         else {
-            Feedback.setText("probeer nog eens");
+            Feedback.setText("fout");
             smiley.setImageResource(R.drawable.dislike);    // pixabay.com
             tellerfout +=1;
         }
@@ -135,7 +140,7 @@ public class ToetsLichaam extends AppCompatActivity {
             @Override
             public void onInit(int status)
             {
-                translator.setLanguage(Locale.GERMAN); // er is nog geen Nederlands :(
+                translator.setLanguage(Locale.getDefault());
                 translator.speak(String.valueOf(Dutchword.getText()), TextToSpeech.QUEUE_FLUSH, null);
             }
         });

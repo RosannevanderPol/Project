@@ -28,7 +28,7 @@
                 android:text="1/16"
                 android:id="@+id/Teller"
                 android:textColor="#ffffff"
-                android:layout_weight="0.01"
+                android:layout_weight="0.02"
                 android:textSize="15dp" />
             <TextView
                 android:layout_width="wrap_content"
@@ -52,22 +52,13 @@
                 android:paddingBottom="15dp"
                 android:singleLine="false" />
 
-            <ImageButton
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:id="@+id/imageButton3"
-                android:background="@drawable/abc_ic_voice_search_api_mtrl_alpha"
-                android:onClick="SpeakClick"
-                android:layout_alignTop="@+id/linearLayout2"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
         </LinearLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="380dp">
             <ImageView
-                android:layout_width="280dp"
-                android:layout_height="500dp"
+                android:layout_width="300dp"
+                android:layout_height="400dp"
                 android:id="@+id/imageView"
                 android:background="@drawable/dieren"
                 android:layout_alignParentLeft="false"
@@ -78,7 +69,7 @@
                 android:layout_centerInParent="true" />
             <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="400dp"
                 android:layout_alignParentTop="true"
                 android:id="@+id/relativeLayout"
                 android:layout_alignRight="@+id/imageView"
@@ -169,10 +160,22 @@
                     android:layout_marginBottom="34dp" />
             </RelativeLayout>
         </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
         <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content">
+
             <ImageButton
                 android:layout_width="50dp"
                 android:layout_height="50dp"
@@ -180,34 +183,45 @@
                 android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha"
                 android:onClick="TerugClick" />
 
-            <ImageView
-                android:layout_width="10dp"
-                android:layout_height="10dp"
-                android:id="@+id/imageView3" />
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:id="@+id/smiley" />
-
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:id="@+id/feedback"
                 android:textColor="#3b42ca"
-                android:layout_weight="0.01"
-                android:textSize="20dp"
+                android:textSize="30dp"
                 android:textAlignment="center"
-                android:paddingTop="15dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text=" "
-                android:id="@+id/Nedwoord"
-                android:textSize="1sp"
-                android:visibility="invisible" />
+                android:paddingTop="15dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/smiley"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/imageButton3"
+                android:layout_alignStart="@+id/imageButton3" />
+
         </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=" "
+            android:id="@+id/Nedwoord"
+            android:textSize="1sp"
+            android:visibility="invisible" />
     </LinearLayout>
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/imageButton3"
+        android:background="@drawable/abc_ic_voice_search_api_mtrl_alpha"
+        android:onClick="SpeakClick"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
 </RelativeLayout>

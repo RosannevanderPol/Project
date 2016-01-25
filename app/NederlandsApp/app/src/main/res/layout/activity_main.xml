@@ -22,8 +22,8 @@
             android:id="@+id/textView8"
             android:textColor="#f2bfa2" />
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="163dp"
+            android:layout_width="250dp"
+            android:layout_height="300dp"
             android:id="@+id/imageView2"
             android:background="@drawable/vlag2"
             android:layout_alignParentBottom="true"
@@ -31,8 +31,7 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:layout_gravity="center_horizontal"
-            android:paddingBottom="40dp"
-            android:layout_weight="0.76" />
+            android:paddingBottom="40dp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -46,7 +45,7 @@
             android:layout_height="wrap_content"
             android:textSize="25sp"
             android:text="oefenen"
-            android:id="@+id/buttonBroek"
+            android:id="@+id/buttonOef"
             android:onClick="OefenenClick"
             android:padding="15dp"
             android:allowUndo="false"
@@ -60,15 +59,24 @@
             android:layout_gravity="center_horizontal"
             android:textSize="10sp"
             android:textIsSelectable="true" />
-
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textSize="25sp"
             android:text="toets"
-            android:id="@+id/button2"
+            android:id="@+id/buttonToets"
             android:onClick="ToetsClick"
             android:padding="15dp"
             android:background="#da6013" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textView4"
+            android:layout_gravity="center_horizontal"
+            android:textSize="10sp"
+            android:textIsSelectable="true" />
+
     </LinearLayout>
 </RelativeLayout>

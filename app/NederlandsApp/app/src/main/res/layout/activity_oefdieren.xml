@@ -27,10 +27,10 @@
             android:gravity="center" />
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="380dp">
+            android:layout_height="400dp">
             <ImageView
-                android:layout_width="280dp"
-                android:layout_height="500dp"
+                android:layout_width="300dp"
+                android:layout_height="400dp"
                 android:id="@+id/imageView"
                 android:background="@drawable/dieren"
                 android:layout_alignParentLeft="false"
@@ -136,38 +136,42 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="0.25">
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <ImageButton
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:id="@+id/imageButton3"
-                    android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha"
-                    android:onClick="TerugClick"
-                    android:padding="15dp" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textStyle="bold"
-                    android:id="@+id/dutchword"
-                    android:padding="5dp"
-                    android:layout_weight="0.06"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    android:textColor="#3b42ca"
-                    android:gravity="center" />
-                <ImageButton
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:id="@+id/imageButton2"
-                    android:background="@drawable/abc_ic_voice_search_api_mtrl_alpha"
-                    android:onClick="SpeakClick"
-                    android:padding="5dp" />
-            </LinearLayout>
-        </LinearLayout>
+            android:weightSum="0.25"></LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton3"
+            android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+            android:onClick="TerugClick"
+            android:padding="15dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:id="@+id/dutchword"
+            android:padding="5dp"
+            android:layout_weight="0.06"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="#3b42ca"
+            android:gravity="center" />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton2"
+            android:background="@drawable/abc_ic_voice_search_api_mtrl_alpha"
+            android:onClick="SpeakClick"
+            android:padding="5dp" />
     </LinearLayout>
 </RelativeLayout>

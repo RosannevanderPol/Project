@@ -27,10 +27,10 @@
             android:gravity="center" />
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="380dp">
+            android:layout_height="400dp">
             <ImageView
-                android:layout_width="280dp"
-                android:layout_height="500dp"
+                android:layout_width="300dp"
+                android:layout_height="400dp"
                 android:id="@+id/imageView"
                 android:background="@drawable/lichaam"
                 android:layout_alignParentLeft="false"
@@ -58,7 +58,8 @@
                     android:onClick="VoetClick"
                     android:layout_alignParentBottom="true"
                     android:layout_toLeftOf="@+id/buttonBovenbeen"
-                    android:layout_toStartOf="@+id/buttonBovenbeen" />
+                    android:layout_toStartOf="@+id/buttonBovenbeen"
+                    android:layout_marginBottom="20dp" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -66,10 +67,10 @@
                     android:id="@+id/buttonEnkel"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="EnkelClick"
-                    android:layout_alignParentBottom="true"
+                    android:layout_alignBottom="@+id/buttonVoet"
                     android:layout_toLeftOf="@+id/buttonKnie"
                     android:layout_toStartOf="@+id/buttonKnie"
-                    android:layout_marginBottom="30dp" />
+                    android:layout_marginBottom="20dp" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -78,8 +79,8 @@
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="BovenbeenClick"
                     android:layout_alignTop="@+id/buttonKnie"
-                    android:layout_alignLeft="@+id/buttonHeup"
-                    android:layout_alignStart="@+id/buttonHeup" />
+                    android:layout_toLeftOf="@+id/buttonEnkel"
+                    android:layout_toStartOf="@+id/buttonEnkel" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -98,8 +99,9 @@
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="HeupClick"
                     android:layout_below="@+id/buttonElleboog"
-                    android:layout_toLeftOf="@+id/buttonHoofd"
-                    android:layout_toStartOf="@+id/buttonHoofd" />
+                    android:layout_toLeftOf="@+id/buttonElleboog"
+                    android:layout_toStartOf="@+id/buttonElleboog"
+                    android:layout_marginTop="26dp" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -133,42 +135,41 @@
                     android:layout_marginTop="27dp" />
             </RelativeLayout>
         </RelativeLayout>
-        <LinearLayout
-            android:orientation="horizontal"
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton3"
+            android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+            android:onClick="TerugClick"
+            android:padding="15dp" />
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="0.25">
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <ImageButton
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:id="@+id/imageButton3"
-                    android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha"
-                    android:onClick="TerugClick"
-                    android:padding="15dp" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textStyle="bold"
-                    android:id="@+id/dutchword"
-                    android:padding="5dp"
-                    android:layout_weight="0.06"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
-                    android:textColor="#3b42ca"
-                    android:gravity="center" />
-                <ImageButton
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:id="@+id/imageButton2"
-                    android:background="@drawable/abc_ic_voice_search_api_mtrl_alpha"
-                    android:onClick="SpeakClick"
-                    android:padding="5dp" />
-            </LinearLayout>
-        </LinearLayout>
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:id="@+id/dutchword"
+            android:padding="5dp"
+            android:layout_weight="0.06"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="#3b42ca"
+            android:gravity="center" />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton2"
+            android:background="@drawable/abc_ic_voice_search_api_mtrl_alpha"
+            android:onClick="SpeakClick"
+            android:padding="5dp" />
     </LinearLayout>
 </RelativeLayout>
