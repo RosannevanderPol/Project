@@ -13,7 +13,8 @@ In zowel de 'oefen-' als de 'toets-modus' kan de gebruiker een categorie kiezen 
 * op straat
 * gereedschap
 
-![schets](https://github.com/RosannevanderPol/Project/blob/master/doc/schets.jpg?raw=true)
+![Screenshots1](https://github.com/RosannevanderPol/Project/blob/master/doc/Screenshots1.png?raw=true)
+![Screenshots2](https://github.com/RosannevanderPol/Project/blob/master/doc/Screenshots2.png?raw=true)
 
 De 'klikbare' afbeeldingen heb ik zelf samengestelt. De afbeeldingen van de categorieën kleuren, cijfers, dieren en lichaam heb ik gemaakt met afbeeldingen van internet en met paint, de categorieën huiskamer, keuken, kleding en gereedschap heb ik zelf geknipt en geplakt uit folders.
 
