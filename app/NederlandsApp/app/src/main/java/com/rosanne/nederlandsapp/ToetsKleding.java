@@ -141,6 +141,7 @@ public class ToetsKleding extends AppCompatActivity {
             public void onInit(int status)
             {
                 translator.setLanguage(Locale.getDefault());
+                translator.speak(String.valueOf(Dutchword.getText()), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
     }
