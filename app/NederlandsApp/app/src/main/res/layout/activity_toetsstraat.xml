@@ -9,7 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ToetsStraat"
     android:background="@drawable/background3">
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -25,45 +24,41 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="1/16"
+                android:text="@string/num"
                 android:id="@+id/Teller"
                 android:textColor="#ffffff"
                 android:layout_weight="0.02"
-                android:textSize="15dp" />
+                android:textSize="15sp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Klik op: "
+                android:text="@string/klikop"
                 android:id="@+id/textView2"
                 android:textColor="#ff0004"
                 android:layout_weight="0.01"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="de lantaarnpaal"
                 android:textStyle="bold"
                 android:id="@+id/Dutchword"
                 android:textColor="#ff0004"
                 android:layout_weight="0.07"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:paddingBottom="15dp"
                 android:singleLine="false" />
-
         </LinearLayout>
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="400dp"
             android:layout_gravity="center_horizontal">
-
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="400dp"
                 android:id="@+id/imageView"
                 android:background="@drawable/opstraat" />
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -72,7 +67,6 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignRight="@+id/imageView"
                 android:layout_alignEnd="@+id/imageView">
-
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -83,7 +77,6 @@
                     android:layout_below="@+id/buttonAuto"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true" />
-
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -94,7 +87,6 @@
                     android:layout_below="@+id/buttonFietser"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true" />
-
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -104,7 +96,6 @@
                     android:onClick="LantaarnClick"
                     android:layout_below="@+id/buttonStoplicht"
                     android:layout_centerHorizontal="true" />
-
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -116,7 +107,6 @@
                     android:layout_alignBottom="@+id/buttonAuto"
                     android:layout_toLeftOf="@+id/buttonStoplicht"
                     android:layout_toStartOf="@+id/buttonStoplicht" />
-
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -127,7 +117,6 @@
                     android:layout_alignTop="@+id/buttonStoplicht"
                     android:layout_toLeftOf="@+id/buttonAuto"
                     android:layout_toStartOf="@+id/buttonAuto" />
-
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -139,7 +128,6 @@
                     android:layout_toLeftOf="@+id/buttonVoetganger"
                     android:layout_toStartOf="@+id/buttonVoetganger"
                     android:layout_marginTop="79dp" />
-
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -153,7 +141,6 @@
                     android:layout_toStartOf="@+id/buttonFietser"
                     android:layout_marginRight="39dp"
                     android:layout_marginEnd="39dp" />
-
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -166,10 +153,8 @@
                     android:layout_toLeftOf="@+id/buttonWeg"
                     android:layout_toStartOf="@+id/buttonWeg" />
             </RelativeLayout>
-
         </RelativeLayout>
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -177,51 +162,41 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
-
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
             <ImageButton
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:id="@+id/imageButton2"
                 android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha"
                 android:onClick="TerugClick" />
-
             <TextView
                 android:layout_width="216dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:id="@+id/feedback"
                 android:textColor="#ff6200"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 android:textAlignment="center"
                 android:paddingTop="15dp"
                 android:textStyle="bold" />
-
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:id="@+id/smiley"
-                android:layout_gravity="center_horizontal"
-                android:layout_alignParentBottom="true"
-                android:layout_alignLeft="@+id/imageButton3"
-                android:layout_alignStart="@+id/imageButton3" />
-
+                android:layout_gravity="center_horizontal" />
         </LinearLayout>
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text=" "
+            android:text=""
             android:id="@+id/Nedwoord"
             android:textSize="1sp"
             android:visibility="invisible" />
     </LinearLayout>
-
     <ImageButton
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -231,5 +206,4 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
-
 </RelativeLayout>

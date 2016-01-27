@@ -17,13 +17,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Klik op een onderdeel"
+            android:text="@string/onderdeel"
             android:id="@+id/textView6"
             android:textStyle="bold"
             android:padding="5dp"
             android:textAlignment="center"
             android:textColor="#ff000d"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:gravity="center" />
         <RelativeLayout
             android:layout_width="match_parent"
@@ -136,7 +136,6 @@
             </RelativeLayout>
         </RelativeLayout>
     </LinearLayout>
-
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -165,7 +164,7 @@
                 android:padding="5dp"
                 android:layout_weight="0.06"
                 android:textAlignment="center"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 android:textColor="#ff6200"
                 android:gravity="center" />
             <ImageButton

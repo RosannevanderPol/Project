@@ -9,13 +9,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import java.util.Locale;
 import java.util.Random;
 
 public class ToetsGereedschap extends AppCompatActivity {
 
-    public final String[] list = {"de hakbijl", "de schroef", "de boormachine","de schroevendraaier","de schaar","de hamer","de bezem","het stoffer en blik"};
+    public final String[] list = {"de hakbijl", "de schroef", "de boormachine",
+            "de schroevendraaier","de schaar","de hamer","de bezem","het stoffer en blik"};  // de woordenlijst
     public String woord;
     public TextView Dutchword;
     public TextView Nedwoord;
@@ -42,7 +42,8 @@ public class ToetsGereedschap extends AppCompatActivity {
         Checkteller();
     }
 
-    /** Random een woord kiezen uit de te toetsen lijst **/
+    /** Random een woord kiezen uit de te toetsen lijst (behalve het huidige woord)
+     * de vraag direct uitspreken  (android-developers.blogspot.com) **/
     private void SelecteerWoord(){
         if (teller <= (list.length * 2)) {
             do {
@@ -61,7 +62,7 @@ public class ToetsGereedschap extends AppCompatActivity {
         }
     }
 
-    /** Check of het antwoord goed is en geef feedback **/
+    /** Check of het antwoord goed is en geef feedback, update teller **/
     private void Feedback(){
         if (String.valueOf(Dutchword.getText()) == String.valueOf(Nedwoord.getText())){
             Feedback.setText("goed");
@@ -140,7 +141,7 @@ public class ToetsGereedschap extends AppCompatActivity {
         Feedback();
     }
 
-    /** Het woord uit de textview uitspreken **/        // android-developers.blogspot.com
+    /** Het woord uit de textview uitspreken aals op de speeker wordt geklikt**/
     public void SpeakClick(View view)
     {
         translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()

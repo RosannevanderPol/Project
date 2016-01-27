@@ -9,7 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ToetsCijfers"
     android:background="@drawable/background3">
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -25,33 +24,31 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="1/16"
+                android:text="@string/num"
                 android:id="@+id/Teller"
                 android:textColor="#ffffff"
                 android:layout_weight="0.02"
-                android:textSize="15dp" />
+                android:textSize="15sp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Klik op: "
+                android:text="@string/klikop"
                 android:id="@+id/textView2"
                 android:textColor="#ff0004"
                 android:layout_weight="0.01"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="de lantaarnpaal"
                 android:textStyle="bold"
                 android:id="@+id/Dutchword"
                 android:textColor="#ff0004"
                 android:layout_weight="0.07"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:paddingBottom="15dp"
                 android:singleLine="false" />
-
         </LinearLayout>
         <RelativeLayout
             android:layout_width="match_parent"
@@ -60,7 +57,7 @@
                 android:layout_width="300dp"
                 android:layout_height="400dp"
                 android:id="@+id/imageView"
-                android:background="@drawable/cijfers"
+                android:background="@drawable/cijfers1"
                 android:layout_alignParentLeft="false"
                 android:layout_alignParentStart="false"
                 android:layout_alignParentTop="true"
@@ -84,9 +81,10 @@
                     android:id="@+id/buttonNul"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="NulClick"
-                    android:layout_alignTop="@+id/buttonEen"
+                    android:layout_alignParentTop="true"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="50dp" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -94,10 +92,9 @@
                     android:id="@+id/buttonEen"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="EenClick"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignLeft="@+id/buttonZes"
-                    android:layout_alignStart="@+id/buttonZes"
-                    android:layout_marginTop="41dp" />
+                    android:layout_alignTop="@+id/buttonAcht"
+                    android:layout_toLeftOf="@+id/buttonDrie"
+                    android:layout_toStartOf="@+id/buttonDrie" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -105,8 +102,10 @@
                     android:id="@+id/buttonTwee"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="TweeClick"
-                    android:layout_alignTop="@+id/buttonEen"
-                    android:layout_centerHorizontal="true" />
+                    android:layout_alignLeft="@+id/buttonVier"
+                    android:layout_alignStart="@+id/buttonVier"
+                    android:layout_above="@+id/buttonDrie"
+                    android:layout_below="@+id/buttonEen" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -114,9 +113,8 @@
                     android:id="@+id/buttonDrie"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="DrieClick"
-                    android:layout_alignTop="@+id/buttonTwee"
-                    android:layout_toRightOf="@+id/buttonTwee"
-                    android:layout_toEndOf="@+id/buttonTwee" />
+                    android:layout_above="@+id/buttonZes"
+                    android:layout_centerHorizontal="true" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -124,9 +122,9 @@
                     android:id="@+id/buttonVier"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="VierClick"
-                    android:layout_alignTop="@+id/buttonDrie"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true" />
+                    android:layout_alignTop="@+id/buttonVijf"
+                    android:layout_toRightOf="@+id/buttonNul"
+                    android:layout_toEndOf="@+id/buttonNul" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -135,8 +133,8 @@
                     android:onClick="VijfClick"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:layout_alignTop="@+id/buttonZes"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
+                    android:layout_toLeftOf="@+id/buttonZeven"
+                    android:layout_toStartOf="@+id/buttonZeven" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -144,9 +142,10 @@
                     android:id="@+id/buttonZes"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="ZesClick"
-                    android:layout_alignTop="@+id/buttonZeven"
-                    android:layout_toLeftOf="@+id/buttonZeven"
-                    android:layout_toStartOf="@+id/buttonZeven" />
+                    android:layout_below="@+id/buttonZeven"
+                    android:layout_toRightOf="@+id/buttonZeven"
+                    android:layout_toEndOf="@+id/buttonZeven"
+                    android:layout_marginTop="57dp" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -154,9 +153,9 @@
                     android:id="@+id/buttonZeven"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="ZevenClick"
-                    android:layout_alignTop="@+id/buttonAcht"
-                    android:layout_alignLeft="@+id/buttonTwee"
-                    android:layout_alignStart="@+id/buttonTwee" />
+                    android:layout_centerVertical="true"
+                    android:layout_alignLeft="@+id/buttonNegen"
+                    android:layout_alignStart="@+id/buttonNegen" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -164,10 +163,9 @@
                     android:id="@+id/buttonAcht"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="AchtClick"
-                    android:layout_marginBottom="130dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_toRightOf="@+id/buttonZeven"
-                    android:layout_toEndOf="@+id/buttonZeven" />
+                    android:layout_below="@+id/buttonNegen"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -175,14 +173,14 @@
                     android:id="@+id/buttonNegen"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="NegenClick"
-                    android:layout_alignTop="@+id/buttonZeven"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true" />
+                    android:layout_marginRight="27dp"
+                    android:layout_marginEnd="27dp"
+                    android:layout_alignTop="@+id/buttonNul"
+                    android:layout_toLeftOf="@+id/buttonAcht"
+                    android:layout_toStartOf="@+id/buttonAcht" />
             </RelativeLayout>
         </RelativeLayout>
-
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -190,52 +188,42 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
-
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
             <ImageButton
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:id="@+id/imageButton2"
                 android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha"
                 android:onClick="TerugClick" />
-
             <TextView
                 android:layout_width="216dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:id="@+id/feedback"
                 android:textColor="#ff6200"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 android:textAlignment="center"
                 android:paddingTop="15dp"
                 android:textIsSelectable="true"
                 android:textStyle="bold" />
-
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:id="@+id/smiley"
-                android:layout_gravity="center_horizontal"
-                android:layout_alignParentBottom="true"
-                android:layout_alignLeft="@+id/imageButton3"
-                android:layout_alignStart="@+id/imageButton3" />
-
+                android:layout_gravity="center_horizontal" />
         </LinearLayout>
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text=" "
+            android:text=""
             android:id="@+id/Nedwoord"
             android:textSize="1sp"
             android:visibility="invisible" />
     </LinearLayout>
-
     <ImageButton
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -245,5 +233,4 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
-
 </RelativeLayout>

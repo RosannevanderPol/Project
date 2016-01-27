@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
 import java.util.Locale;
 
 public class OefCijfers extends AppCompatActivity {
@@ -22,8 +21,8 @@ public class OefCijfers extends AppCompatActivity {
         DutchWord = (TextView) findViewById(R.id.dutchword);
     }
 
-    /** Alle aan te wijzen onderdelen **/
-    /** afbeelding cijfers: www.aduis.nl **/
+    /** Alle klikbare onderdelen, het woord verschijnt en wordt uitgesproken (android-developers.blogspot.com) **/
+    /** afbeelding cijfers: zelf met paint **/
     public void NulClick(View view)
     {
         DutchWord.setText("nul");
@@ -36,7 +35,6 @@ public class OefCijfers extends AppCompatActivity {
             }
         });
     }
-
     public void EenClick(View view)
     {
         DutchWord.setText("één");
@@ -49,7 +47,6 @@ public class OefCijfers extends AppCompatActivity {
             }
         });
     }
-
     public void TweeClick(View view)
     {
         DutchWord.setText("twee");
@@ -62,7 +59,6 @@ public class OefCijfers extends AppCompatActivity {
             }
         });
     }
-
     public void DrieClick(View view)
     {
         DutchWord.setText("drie");
@@ -75,7 +71,6 @@ public class OefCijfers extends AppCompatActivity {
             }
         });
     }
-
     public void VierClick(View view)
     {
         DutchWord.setText("vier");
@@ -88,7 +83,6 @@ public class OefCijfers extends AppCompatActivity {
             }
         });
     }
-
     public void VijfClick(View view)
     {
         DutchWord.setText("Vijf");
@@ -101,7 +95,6 @@ public class OefCijfers extends AppCompatActivity {
             }
         });
     }
-
     public void ZesClick(View view)
     {
         DutchWord.setText("zes");
@@ -114,7 +107,6 @@ public class OefCijfers extends AppCompatActivity {
             }
         });
     }
-
     public void ZevenClick(View view)
     {
         DutchWord.setText("zeven");
@@ -127,7 +119,6 @@ public class OefCijfers extends AppCompatActivity {
             }
         });
     }
-
     public void AchtClick(View view)
     {
         DutchWord.setText("acht");
@@ -140,7 +131,6 @@ public class OefCijfers extends AppCompatActivity {
             }
         });
     }
-
     public void NegenClick(View view)
     {
         DutchWord.setText("negen");
@@ -154,7 +144,7 @@ public class OefCijfers extends AppCompatActivity {
         });
     }
 
-    /** Het woord uit de textview uitspreken **/ // android-developers.blogspot.com
+    /** Het woord uit de textview uitspreken als op de speeker wordt geklikt **/
     public void SpeakClick(View view)
     {
         translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()

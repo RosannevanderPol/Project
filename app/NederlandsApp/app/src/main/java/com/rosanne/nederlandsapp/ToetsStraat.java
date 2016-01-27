@@ -9,14 +9,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import java.util.Locale;
 import java.util.Random;
 
 public class ToetsStraat extends AppCompatActivity {
 
-    public final String[] list = {"de stoep", "de voetganger", "de lantaarnpaal","de fietser","de boom","het stoplicht","de weg","de auto"};
+    public final String[] list = {"de stoep", "de voetganger", "de lantaarnpaal",
+            "de fietser","de boom","het stoplicht","de weg","de auto"};    //de woordenlijst
     public String woord;
     public TextView Dutchword;
     public TextView Nedwoord;
@@ -42,7 +41,8 @@ public class ToetsStraat extends AppCompatActivity {
         Checkteller();
     }
 
-    /** Random een woord kiezen uit de te toetsen lijst **/
+    /** Random een woord kiezen uit de te toetsen lijst (behalve het huidige woord)
+     * de vraag direct uitspreken  (android-developers.blogspot.com) **/
     private void SelecteerWoord(){
         if (teller <= (list.length * 2)) {
             do {
@@ -61,7 +61,7 @@ public class ToetsStraat extends AppCompatActivity {
         }
     }
 
-    /** Check of het antwoord goed is en geef feedback **/
+    /** Check of het antwoord goed is en geef feedback, update teller **/
     private void Feedback(){
         if (String.valueOf(Dutchword.getText()) == String.valueOf(Nedwoord.getText())){
             Feedback.setText("goed");
@@ -140,7 +140,7 @@ public class ToetsStraat extends AppCompatActivity {
         Feedback();
     }
 
-    /** Het woord uit de textview uitspreken **/ // android-developers.blogspot.com
+    /** Het woord uit de textview uitspreken als op de speeker wordt geklikt**/
     public void SpeakClick(View view)
     {
         translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()

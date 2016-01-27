@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Leer NL</string>
+    <string name="Oef">Oefenen</string>
+    <string name="Toet">Toets</string>
+    <string name="welkom">Welkom</string>
+    <string name="bij">bij</string>
+    <string name="leer">Leer NL</string>
+    <string name="oef">oefenen</string>
+    <string name="toet">toets</string>
+    <string name="cijfer">Klik op een cijfer</string>
+    <string name="dier">Klik op een dier</string>
+    <string name="onderdeel">Klik op een onderdeel</string>
+    <string name="kleding">Klik op een kledingstuk</string>
+    <string name="kleur">Klik op een kleur</string>
+    <string name="lichaam">Klik op een lichaamsdeel</string>
+    <string name="num">1/16</string>
+    <string name="klikop">Klik op:</string>
 </resources>

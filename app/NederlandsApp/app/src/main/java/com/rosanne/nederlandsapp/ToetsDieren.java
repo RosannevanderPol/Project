@@ -9,13 +9,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import java.util.Locale;
 import java.util.Random;
 
 public class ToetsDieren extends AppCompatActivity {
 
-    public final String[] list = {"de poes", "het varken", "de kip","de hond","het paard","het schaap","het konijn","de koe"};
+    public final String[] list = {"de poes", "het varken", "de kip","de hond","het paard","het schaap","het konijn","de koe"};  // de woordenlijst
     public String woord;
     public TextView Dutchword;
     public TextView Nedwoord;
@@ -25,7 +24,6 @@ public class ToetsDieren extends AppCompatActivity {
     public TextView Teller;
     public int tellerfout = 0;
     public ImageView smiley;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +40,8 @@ public class ToetsDieren extends AppCompatActivity {
         Checkteller();
     }
 
-    /** Random een woord kiezen uit de te toetsen lijst **/
+    /** Random een woord kiezen uit de te toetsen lijst (behalve het huidige woord)
+     * de vraag direct uitspreken  (android-developers.blogspot.com) **/
     private void SelecteerWoord(){
         if (teller <= (list.length * 2)) {
             do {
@@ -61,7 +60,7 @@ public class ToetsDieren extends AppCompatActivity {
         }
     }
 
-    /** Check of het antwoord goed is en geef feedback **/
+    /** Check of het antwoord goed is en geef feedback, teller updaten**/
     private void Feedback(){
         if (String.valueOf(Dutchword.getText()) == String.valueOf(Nedwoord.getText())){
             Feedback.setText("goed");
@@ -140,7 +139,7 @@ public class ToetsDieren extends AppCompatActivity {
         Feedback();
     }
 
-    /** Het woord uit de textview uitspreken **/        // android-developers.blogspot.com
+    /** Het woord uit de textview uitspreken als op de speeker wordt geklikt**/
     public void SpeakClick(View view)
     {
         translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()

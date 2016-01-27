@@ -24,7 +24,7 @@
             android:id="@+id/textView"
             android:textColor="#3b42ca"
             android:gravity="center"
-            android:text="Oefenen" />
+            android:text="@string/Oef" />
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="360dp">

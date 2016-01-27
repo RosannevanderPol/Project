@@ -21,7 +21,8 @@ public class OefKleur extends AppCompatActivity {
         DutchWord = (TextView) findViewById(R.id.dutchword);
     }
 
-    /** Alle aan te wijzen onderdelen **/
+    /** Alle klikbare onderdelen, het woord verschijnt en wordt uitgesproken (android-developers.blogspot.com) **/
+    /** afbeelding kleur: zelf met paint **/
     public void WitClick(View view)
     {
         DutchWord.setText("Wit");
@@ -34,7 +35,6 @@ public class OefKleur extends AppCompatActivity {
             }
         });
     }
-
     public void RoodClick(View view)
     {
         DutchWord.setText("Rood");
@@ -47,7 +47,6 @@ public class OefKleur extends AppCompatActivity {
             }
         });
     }
-
     public void OranjeClick(View view)
     {
         DutchWord.setText("Oranje");
@@ -60,7 +59,6 @@ public class OefKleur extends AppCompatActivity {
             }
         });
     }
-
     public void GeelClick(View view)
     {
         DutchWord.setText("Geel");
@@ -73,7 +71,6 @@ public class OefKleur extends AppCompatActivity {
             }
         });
     }
-
     public void GroenClick(View view)
     {
         DutchWord.setText("Groen");
@@ -86,7 +83,6 @@ public class OefKleur extends AppCompatActivity {
             }
         });
     }
-
     public void BlauwClick(View view)
     {
         DutchWord.setText("Blauw");
@@ -99,7 +95,6 @@ public class OefKleur extends AppCompatActivity {
             }
         });
     }
-
     public void PaarsClick(View view)
     {
         DutchWord.setText("Paars");
@@ -112,7 +107,6 @@ public class OefKleur extends AppCompatActivity {
             }
         });
     }
-
     public void ZwartClick(View view)
     {
         DutchWord.setText("Zwart");
@@ -150,7 +144,7 @@ public class OefKleur extends AppCompatActivity {
         });
     }
 
-    /** Het woord uit de textview uitspreken **/ // android-developers.blogspot.com
+    /** Het woord uit de textview uitspreken als op de speeker wordt geklikt **/
     public void SpeakClick(View view)
     {
         translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()

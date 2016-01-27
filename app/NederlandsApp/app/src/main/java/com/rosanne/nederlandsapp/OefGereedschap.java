@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
 import java.util.Locale;
 
 public class OefGereedschap extends AppCompatActivity {
@@ -22,7 +21,7 @@ public class OefGereedschap extends AppCompatActivity {
         DutchWord = (TextView) findViewById(R.id.dutchword);
     }
 
-    /** Alle aan te wijzen onderdelen **/
+    /** Alle klikbare onderdelen, het woord verschijnt en wordt uitgesproken (android-developers.blogspot.com) **/
     /** afbeelding gereedschap: zelf geknutselt **/
     public void HamerClick(View view)
     {
@@ -36,7 +35,6 @@ public class OefGereedschap extends AppCompatActivity {
             }
         });
     }
-
     public void SchroevendraaierClick(View view)
     {
         DutchWord.setText("de schroevendraaier");
@@ -49,7 +47,6 @@ public class OefGereedschap extends AppCompatActivity {
             }
         });
     }
-
     public void HakbijlClick(View view)
     {
         DutchWord.setText("de hakbijl");
@@ -62,7 +59,6 @@ public class OefGereedschap extends AppCompatActivity {
             }
         });
     }
-
     public void BoormachineClick(View view)
     {
         DutchWord.setText("de boormachine");
@@ -75,7 +71,6 @@ public class OefGereedschap extends AppCompatActivity {
             }
         });
     }
-
     public void SchroefClick(View view)
     {
         DutchWord.setText("de schroef");
@@ -88,7 +83,6 @@ public class OefGereedschap extends AppCompatActivity {
             }
         });
     }
-
     public void BezemClick(View view)
     {
         DutchWord.setText("de bezem");
@@ -101,7 +95,6 @@ public class OefGereedschap extends AppCompatActivity {
             }
         });
     }
-
     public void StofferClick(View view)
     {
         DutchWord.setText("het stoffer en blik");
@@ -114,7 +107,6 @@ public class OefGereedschap extends AppCompatActivity {
             }
         });
     }
-
     public void SchaarClick(View view)
     {
         DutchWord.setText("de schaar");
@@ -128,7 +120,7 @@ public class OefGereedschap extends AppCompatActivity {
         });
     }
 
-    /** Het woord uit de textview uitspreken **/ // android-developers.blogspot.com
+    /** Het woord uit de textview uitspreken als op de speeker wordt geklikt**/
     public void SpeakClick(View view)
     {
         translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()

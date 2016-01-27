@@ -1,9 +1,5 @@
 package com.rosanne.nederlandsapp;
 
-// www.wnf.nl : strand
-// perron11.nl: duinen
-
-
 import android.content.Intent;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
@@ -20,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         /** 'Spreek' een leeg bericht uit om text-to-speech op te starten zodat het meteen
-         *   snel werkt als het microfoontje wordt aangeklikt in de oefen- of toets-modus. **/
+         *   snel werkt als het speekertje wordt aangeklikt in de oefen- of toets-modus. **/
         translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()
         {
             @Override
@@ -31,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /** kies de oefen- of toetsmodus **/
     public void OefenenClick(View view)
     {
         Intent Oefenen = new Intent(this, CatOef.class);

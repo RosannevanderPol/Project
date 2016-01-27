@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
 import java.util.Locale;
 
 public class OefKleding extends AppCompatActivity {
@@ -22,7 +21,7 @@ public class OefKleding extends AppCompatActivity {
         DutchWord = (TextView) findViewById(R.id.dutchword);
     }
 
-    /** Alle aan te wijzen onderdelen **/
+    /** Alle klikbare onderdelen, het woord verschijnt en wordt uitgesproken (android-developers.blogspot.com) **/
     /** afbeelding kleding: zelf geknutselt uit de Ikea gids **/
     public void SchoenClick(View view)
     {
@@ -36,7 +35,6 @@ public class OefKleding extends AppCompatActivity {
             }
         });
     }
-
     public void SjaalClick(View view)
     {
         DutchWord.setText("de sjaal");
@@ -49,7 +47,6 @@ public class OefKleding extends AppCompatActivity {
             }
         });
     }
-
     public void BroekClick(View view)
     {
         DutchWord.setText("de broek");
@@ -62,7 +59,6 @@ public class OefKleding extends AppCompatActivity {
             }
         });
     }
-
     public void MutsClick(View view)
     {
         DutchWord.setText("de muts");
@@ -75,7 +71,6 @@ public class OefKleding extends AppCompatActivity {
             }
         });
     }
-
     public void JasClick(View view)
     {
         DutchWord.setText("de jas");
@@ -88,7 +83,6 @@ public class OefKleding extends AppCompatActivity {
             }
         });
     }
-
     public void TruiClick(View view)
     {
         DutchWord.setText("de trui");
@@ -101,7 +95,6 @@ public class OefKleding extends AppCompatActivity {
             }
         });
     }
-
     public void LaarsClick(View view)
     {
         DutchWord.setText("de laars");
@@ -114,7 +107,6 @@ public class OefKleding extends AppCompatActivity {
             }
         });
     }
-
     public void HandschoenClick(View view)
     {
         DutchWord.setText("de handschoen");
@@ -128,7 +120,7 @@ public class OefKleding extends AppCompatActivity {
         });
     }
 
-    /** Het woord uit de textview uitspreken **/ // android-developers.blogspot.com
+    /** Het woord uit de textview uitspreken als op de speeker wordt geklikt**/
     public void SpeakClick(View view)
     {
         translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()

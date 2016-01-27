@@ -9,13 +9,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import java.util.Locale;
 import java.util.Random;
 
 public class ToetsCijfers extends AppCompatActivity {
 
-    public final String[] list = {"één", "twee", "drie","vier","vijf","zes","zeven","acht","negen","nul"};
+    public final String[] list = {"één", "twee", "drie","vier","vijf","zes","zeven","acht","negen","nul"};  // de woordenlijst
     public String woord;
     public TextView Dutchword;
     public TextView Nedwoord;
@@ -41,7 +40,8 @@ public class ToetsCijfers extends AppCompatActivity {
         Checkteller();
     }
 
-    /** Random een woord kiezen uit de te toetsen lijst **/
+    /** Random een woord kiezen uit de te toetsen lijst (behalve het huidige woord)
+     * de vraag direct uitspreken **/
     private void SelecteerWoord(){
         if (teller <= (list.length * 2)) {
             do {
@@ -60,7 +60,7 @@ public class ToetsCijfers extends AppCompatActivity {
         }
     }
 
-    /** Check of het antwoord goed is en geef feedback **/
+    /** Check of het antwoord goed is en geef feedback, teller updaten **/
     private void Feedback(){
         if (String.valueOf(Dutchword.getText()) == String.valueOf(Nedwoord.getText())){
             Feedback.setText("goed");
@@ -76,7 +76,7 @@ public class ToetsCijfers extends AppCompatActivity {
         }
     }
 
-    /** Als er 16 vragen zijn gesteld, dialogvenster met aantalfout en daarna naar categorie overzicht**/
+    /** Als er 20 vragen zijn gesteld, dialogvenster met aantalfout en daarna naar categorie overzicht**/
     private void Checkteller() {
         if (teller > (list.length * 2)) {
             AlertDialog.Builder scores = new AlertDialog.Builder(this);   // stackoverflow.com
@@ -149,7 +149,7 @@ public class ToetsCijfers extends AppCompatActivity {
         Feedback();
     }
 
-    /** Het woord uit de textview uitspreken **/        // android-developers.blogspot.com
+    /** Het woord uit de textview uitspreken als op de speeker wordt geklikt**/
     public void SpeakClick(View view)
     {
         translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()

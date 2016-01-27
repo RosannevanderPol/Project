@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
 import java.util.Locale;
 
 public class OefHuiskamer extends AppCompatActivity {
@@ -22,7 +21,7 @@ public class OefHuiskamer extends AppCompatActivity {
         DutchWord = (TextView) findViewById(R.id.dutchword);
     }
 
-    /** Alle aan te wijzen onderdelen **/
+    /** Alle klikbare onderdelen, het woord verschijnt en wordt uitgesproken (android-developers.blogspot.com) **/
     /** afbeelding huiskamer: zelf geknutselt **/
     public void KastClick(View view)
     {
@@ -36,7 +35,6 @@ public class OefHuiskamer extends AppCompatActivity {
             }
         });
     }
-
     public void BloemenvaasClick(View view)
     {
         DutchWord.setText("de bloemenvaas");
@@ -49,7 +47,6 @@ public class OefHuiskamer extends AppCompatActivity {
             }
         });
     }
-
     public void KlokClick(View view)
     {
         DutchWord.setText("de klok");
@@ -62,7 +59,6 @@ public class OefHuiskamer extends AppCompatActivity {
             }
         });
     }
-
     public void KaarsClick(View view)
     {
         DutchWord.setText("de kaars");
@@ -75,7 +71,6 @@ public class OefHuiskamer extends AppCompatActivity {
             }
         });
     }
-
     public void StoelClick(View view)
     {
         DutchWord.setText("de stoel");
@@ -88,7 +83,6 @@ public class OefHuiskamer extends AppCompatActivity {
             }
         });
     }
-
     public void LampClick(View view)
     {
         DutchWord.setText("de lamp");
@@ -101,7 +95,6 @@ public class OefHuiskamer extends AppCompatActivity {
             }
         });
     }
-
     public void TafelClick(View view)
     {
         DutchWord.setText("de tafel");
@@ -114,7 +107,6 @@ public class OefHuiskamer extends AppCompatActivity {
             }
         });
     }
-
     public void BankClick(View view)
     {
         DutchWord.setText("de bank");
@@ -128,7 +120,7 @@ public class OefHuiskamer extends AppCompatActivity {
         });
     }
 
-    /** Het woord uit de textview uitspreken **/ // android-developers.blogspot.com
+    /** Het woord uit de textview uitspreken als op de speeker wordt geklikt **/
     public void SpeakClick(View view)
     {
         translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()

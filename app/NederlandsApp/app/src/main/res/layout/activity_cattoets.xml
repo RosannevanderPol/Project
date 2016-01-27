@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:padding="20dp"
-            android:text="Toets"
+            android:text="@string/Toet"
             android:textSize="30sp"
             android:textStyle="bold"
             android:id="@+id/textView"
