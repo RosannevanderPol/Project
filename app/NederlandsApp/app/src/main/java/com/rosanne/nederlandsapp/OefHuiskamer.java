@@ -27,41 +27,105 @@ public class OefHuiskamer extends AppCompatActivity {
     public void KastClick(View view)
     {
         DutchWord.setText("de kast");
+        translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()
+        {
+            @Override
+            public void onInit(int status)
+            {
+                translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
     }
 
     public void BloemenvaasClick(View view)
     {
         DutchWord.setText("de bloemenvaas");
+        translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()
+        {
+            @Override
+            public void onInit(int status)
+            {
+                translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
     }
 
     public void KlokClick(View view)
     {
         DutchWord.setText("de klok");
+        translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()
+        {
+            @Override
+            public void onInit(int status)
+            {
+                translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
     }
 
     public void KaarsClick(View view)
     {
         DutchWord.setText("de kaars");
+        translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()
+        {
+            @Override
+            public void onInit(int status)
+            {
+                translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
     }
 
     public void StoelClick(View view)
     {
         DutchWord.setText("de stoel");
+        translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()
+        {
+            @Override
+            public void onInit(int status)
+            {
+                translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
     }
 
     public void LampClick(View view)
     {
         DutchWord.setText("de lamp");
+        translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()
+        {
+            @Override
+            public void onInit(int status)
+            {
+                translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
     }
 
     public void TafelClick(View view)
     {
         DutchWord.setText("de tafel");
+        translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()
+        {
+            @Override
+            public void onInit(int status)
+            {
+                translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
     }
 
     public void BankClick(View view)
     {
         DutchWord.setText("de bank");
+        translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()
+        {
+            @Override
+            public void onInit(int status)
+            {
+                translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
     }
 
     /** Het woord uit de textview uitspreken **/ // android-developers.blogspot.com

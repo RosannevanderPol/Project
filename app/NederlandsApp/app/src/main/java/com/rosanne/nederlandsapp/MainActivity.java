@@ -1,5 +1,9 @@
 package com.rosanne.nederlandsapp;
 
+// www.wnf.nl : strand
+// perron11.nl: duinen
+
+
 import android.content.Intent;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;

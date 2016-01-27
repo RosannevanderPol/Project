@@ -49,6 +49,14 @@ public class ToetsHuiskamer extends AppCompatActivity {
             while (woord == String.valueOf(Nedwoord.getText()));
             Dutchword.setText(woord);
             Teller.setText((teller) + "/" + (list.length * 2));
+            translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()
+            {
+                @Override
+                public void onInit(int status)
+                {
+                    translator.speak("Klik op       :" + String.valueOf(Dutchword.getText()), TextToSpeech.QUEUE_FLUSH, null);
+                }
+            });
         }
     }
 

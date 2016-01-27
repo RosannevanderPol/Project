@@ -50,13 +50,21 @@ public class ToetsStraat extends AppCompatActivity {
             while (woord == String.valueOf(Nedwoord.getText()));
             Dutchword.setText(woord);
             Teller.setText((teller) + "/" + (list.length * 2));
+            translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()
+            {
+                @Override
+                public void onInit(int status)
+                {
+                    translator.speak("Klik op       :" + String.valueOf(Dutchword.getText()), TextToSpeech.QUEUE_FLUSH, null);
+                }
+            });
         }
     }
 
     /** Check of het antwoord goed is en geef feedback **/
     private void Feedback(){
         if (String.valueOf(Dutchword.getText()) == String.valueOf(Nedwoord.getText())){
-            Feedback.setText("fout");
+            Feedback.setText("goed");
             smiley.setImageResource(R.drawable.up);
             teller += 1;
             Checkteller();

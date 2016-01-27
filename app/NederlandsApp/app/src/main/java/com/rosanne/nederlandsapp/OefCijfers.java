@@ -27,51 +27,131 @@ public class OefCijfers extends AppCompatActivity {
     public void NulClick(View view)
     {
         DutchWord.setText("nul");
+        translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()
+        {
+            @Override
+            public void onInit(int status)
+            {
+                translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
     }
 
     public void EenClick(View view)
     {
         DutchWord.setText("één");
+        translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()
+        {
+            @Override
+            public void onInit(int status)
+            {
+                translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
     }
 
     public void TweeClick(View view)
     {
         DutchWord.setText("twee");
+        translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()
+        {
+            @Override
+            public void onInit(int status)
+            {
+                translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
     }
 
     public void DrieClick(View view)
     {
         DutchWord.setText("drie");
+        translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()
+        {
+            @Override
+            public void onInit(int status)
+            {
+                translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
     }
 
     public void VierClick(View view)
     {
         DutchWord.setText("vier");
+        translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()
+        {
+            @Override
+            public void onInit(int status)
+            {
+                translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
     }
 
     public void VijfClick(View view)
     {
         DutchWord.setText("Vijf");
+        translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()
+        {
+            @Override
+            public void onInit(int status)
+            {
+                translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
     }
 
     public void ZesClick(View view)
     {
         DutchWord.setText("zes");
+        translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()
+        {
+            @Override
+            public void onInit(int status)
+            {
+                translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
     }
 
     public void ZevenClick(View view)
     {
         DutchWord.setText("zeven");
+        translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()
+        {
+            @Override
+            public void onInit(int status)
+            {
+                translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
     }
 
     public void AchtClick(View view)
     {
         DutchWord.setText("acht");
+        translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()
+        {
+            @Override
+            public void onInit(int status)
+            {
+                translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
     }
 
     public void NegenClick(View view)
     {
         DutchWord.setText("negen");
+        translator = new TextToSpeech(this, new TextToSpeech.OnInitListener()
+        {
+            @Override
+            public void onInit(int status)
+            {
+                translator.speak(String.valueOf(DutchWord.getText()), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
     }
 
     /** Het woord uit de textview uitspreken **/ // android-developers.blogspot.com

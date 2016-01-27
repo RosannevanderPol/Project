@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".OefCijfers"
-    android:background="#f2bfa2">
+    android:background="@drawable/background2">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:textStyle="bold"
             android:padding="5dp"
             android:textAlignment="center"
-            android:textColor="#3b42ca"
+            android:textColor="#ff000d"
             android:textSize="20dp"
             android:gravity="center" />
         <RelativeLayout
@@ -87,8 +87,8 @@
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="DrieClick"
                     android:layout_alignTop="@+id/buttonTwee"
-                    android:layout_toLeftOf="@+id/buttonVier"
-                    android:layout_toStartOf="@+id/buttonVier" />
+                    android:layout_toRightOf="@+id/buttonTwee"
+                    android:layout_toEndOf="@+id/buttonTwee" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -136,10 +136,10 @@
                     android:id="@+id/buttonAcht"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="AchtClick"
+                    android:layout_marginBottom="128dp"
                     android:layout_alignParentBottom="true"
-                    android:layout_toLeftOf="@+id/buttonDrie"
-                    android:layout_toStartOf="@+id/buttonDrie"
-                    android:layout_marginBottom="131dp" />
+                    android:layout_toRightOf="@+id/buttonZeven"
+                    android:layout_toEndOf="@+id/buttonZeven" />
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="40dp"
@@ -147,9 +147,9 @@
                     android:id="@+id/buttonNegen"
                     android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
                     android:onClick="NegenClick"
-                    android:layout_alignBottom="@+id/buttonAcht"
-                    android:layout_toRightOf="@+id/buttonDrie"
-                    android:layout_toEndOf="@+id/buttonDrie" />
+                    android:layout_alignTop="@+id/buttonZeven"
+                    android:layout_alignLeft="@+id/buttonVier"
+                    android:layout_alignStart="@+id/buttonVier" />
             </RelativeLayout>
         </RelativeLayout>
         <LinearLayout
@@ -183,14 +183,14 @@
             android:padding="5dp"
             android:layout_weight="0.06"
             android:textAlignment="center"
-            android:textSize="20dp"
-            android:textColor="#3b42ca"
+            android:textSize="25dp"
+            android:textColor="#ff6200"
             android:gravity="center" />
         <ImageButton
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:id="@+id/imageButton2"
-            android:background="@drawable/abc_ic_voice_search_api_mtrl_alpha"
+            android:background="@android:drawable/ic_lock_silent_mode_off"
             android:onClick="SpeakClick"
             android:padding="5dp" />
     </LinearLayout>

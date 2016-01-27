@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ToetsStraat"
-    android:background="#f2bfa2">
+    android:background="@drawable/background3">
 
     <LinearLayout
         android:orientation="vertical"
@@ -36,7 +36,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Klik op: "
                 android:id="@+id/textView2"
-                android:textColor="#3b42ca"
+                android:textColor="#ff0004"
                 android:layout_weight="0.01"
                 android:textSize="20dp" />
             <TextView
@@ -46,7 +46,7 @@
                 android:text="de lantaarnpaal"
                 android:textStyle="bold"
                 android:id="@+id/Dutchword"
-                android:textColor="#3b42ca"
+                android:textColor="#ff0004"
                 android:layout_weight="0.07"
                 android:textSize="20dp"
                 android:paddingBottom="15dp"
@@ -195,10 +195,11 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:id="@+id/feedback"
-                android:textColor="#3b42ca"
+                android:textColor="#ff6200"
                 android:textSize="30dp"
                 android:textAlignment="center"
-                android:paddingTop="15dp" />
+                android:paddingTop="15dp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="50dp"
@@ -222,10 +223,10 @@
     </LinearLayout>
 
     <ImageButton
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:id="@+id/imageButton3"
-        android:background="@drawable/abc_ic_voice_search_api_mtrl_alpha"
+        android:background="@android:drawable/ic_lock_silent_mode_off"
         android:onClick="SpeakClick"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
