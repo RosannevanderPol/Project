@@ -28,4 +28,4 @@ De 'klikbare' afbeeldingen heb ik zelf samengestelt. De afbeeldingen van de cate
 * afbeelding strand: www.wnf.nl
 * afbeelding duinen: www.perron11.nl
 
-**Rosanne van der Pol - 10564267**
+**Rosanne van der Pol - 10564268**
