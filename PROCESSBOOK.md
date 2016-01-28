@@ -76,6 +76,7 @@ ziek
 
 # Day 16
 * Alle aandachtspunten aangepakt. Text-to-speech start meteen en werkt snel, layout aangepast, de teller stopt bij de laatste vraag en de randomfunctie kiest nu random uit de hele lijst min het huidige woord. 
+* Ondekt hoe ik text-to-speech in het Nederlands krijg ipv Duits. Als ik in m'n code de taal op 'default' instel en op mijn telefoon google-tect-to-speech update en instel op Nederlands gaat het goed! Yes!
 
 # Day 17
 * Een gebruiker attendeerde mij erop dat het microfoon-incoontje wat in gebruik, een speekertje moet zijn, helemaal gelijk in natuurlijk! Ook dat het mooier zou zijn als het woord meteen woord uitgesproken als je op een onderdeel klikt, ipv dat je zelf steeds moet klikken. Dat heb ik veranderd.
