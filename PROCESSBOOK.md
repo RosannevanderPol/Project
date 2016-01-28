@@ -77,3 +77,17 @@ ziek
 # Day 16
 * Alle aandachtspunten aangepakt. Text-to-speech start meteen en werkt snel, layout aangepast, de teller stopt bij de laatste vraag en de randomfunctie kiest nu random uit de hele lijst min het huidige woord. 
 
+# Day 17
+* Een gebruiker attendeerde mij erop dat het microfoon-incoontje wat in gebruik, een speekertje moet zijn, helemaal gelijk in natuurlijk! Ook dat het mooier zou zijn als het woord meteen woord uitgesproken als je op een onderdeel klikt, ipv dat je zelf steeds moet klikken. Dat heb ik veranderd.
+* Copyright en report aangemaakt.
+
+# Day 18
+* De gebruiker van gister heeft mij geïnspireerd om ook de vraag van de toets direct uit te laten spreken.
+* Ook de lay-out geperfectioneerd: Andere achtergronden, kleuren ect.
+
+# Day 19
+* Report.
+
+# Day 20
+* Presentatie.
+
