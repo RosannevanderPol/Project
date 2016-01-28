@@ -1,5 +1,5 @@
 ![icon](https://github.com/RosannevanderPol/Project/blob/master/doc/icon.png?raw=true) 
-Project - Leer NL by Rosanne van der Pol
+'Leer NL' by Rosanne van der Pol
 =================
 
 ![Screenshots1](https://github.com/RosannevanderPol/Project/blob/master/doc/Screenshots1.png?raw=true)
