@@ -1,5 +1,5 @@
-Project - Leer NL
-=================
+![icon](https://github.com/RosannevanderPol/Project/blob/master/doc/icon.png?raw=true) Project - Leer NL 
+                                                                                       =================
 
 ![Screenshots1](https://github.com/RosannevanderPol/Project/blob/master/doc/Screenshots1.png?raw=true)
 ![Screenshots2](https://github.com/RosannevanderPol/Project/blob/master/doc/Screenshots2.png?raw=true)
