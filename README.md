@@ -22,6 +22,7 @@ De 'klikbare' afbeeldingen heb ik zelf samengestelt. De afbeeldingen van de cate
 
 * code text-to-speech: www.stackoverflow.com
 * code randomfucntie: www.stackoverflow.com
+* afbeelding molen: www.insight.nhtv.nl
 * afbeelding goed en fout: www.pixabay.com
 * afbeelding dieren: www.pixabay.com
 * afbeelding lichaam: www.fotovisie.nl (gebruiker: Han)
