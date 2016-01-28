@@ -21,5 +21,30 @@ In zowel de 'oefen-' als de 'toets-modus' kan de gebruiker een categorie kiezen 
 De 'klikbare' afbeeldingen van de categorieën heb ik zelf samengesteld. De afbeeldingen van de categorieën kleuren, cijfers, dieren en lichaam heb ik gemaakt met afbeeldingen van internet en met paint, de categorieën huiskamer, keuken, kleding en gereedschap heb ik zelf geknipt en geplakt uit folders.
 
 # Technical design
+**Main activity**
+* Text-to-speech activeren voor snelheid in de activities hierna.
+* Twee knoppen: een voor oefenen en een voor toets.
+
+**Oefen categorië overzicht**
+* Knoppen voor alle verschillende oefen-categoriën.
+
+**Toets categorie overzicht**
+* Knoppen voor alle verschillende toets-categoriën.
+
+**Oefencategoriën** (alle categoriën hebben een eigen activity met de volgende onderdelen: )
+* Functie voor alle klikbare onderdelen: set text onderaan scherm & spreek uit (text-to-speech).
+* Functie voor uitpreken als op de speeker wordt geklikt.
+* Fucntie voor de terugknop.
+
+**Toestcategoriën** (alle categoriën hebben een eigen activity met de volgende onderdelen: )
+* Lijst met woorden.
+* SelecteerWoord: random uit lijst kiezen, teller ophogen, uitspreken.
+* Feedback: check of aangeklikte woord het zelfde is als het gevraagde woord, set feedback en smiley.
+* CheckTeller: Als het maximale aantal vragen gesteld is een dialog scherm starten met aantal fout en  
+ok-knop die terug stuurt naar de categoriën.
+* Functie voor alle klikbare onderdelen: set text in onzichtbaar scherm (welke wordt vergeleken met het  
+gekozen woord uit d random-functie.
+* Functie voor uitpreken als op de speeker wordt geklikt.
+* Fucntie voor de terugknop.
 
 # Challenges & changes with arguments
